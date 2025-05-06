@@ -1,0 +1,13 @@
+*{/*كل عناصر الصفحة */
+    box-sizing: border-box;/*اي Padding من ضمن البوكس */
+}
+
+
+body{
+    margin: 0;
+
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
