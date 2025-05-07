@@ -50,3 +50,16 @@
     }
   });
 
+// نختار جميع الروابط داخل الناف بار
+const navLinks = document.querySelectorAll('nav a');
+
+// نضيف event لكل رابط
+navLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    // نزيل الكلاس active من جميع الروابط
+    navLinks.forEach(l => l.classList.remove('active'));
+
+    // نضيف الكلاس active للرابط الحالي
+    this.classList.add('active');
+  });
+});
