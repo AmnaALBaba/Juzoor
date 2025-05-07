@@ -96,22 +96,40 @@
   </section>
 
   <!-- Landing section -->
-  <section class="landing bg-[#FAF7F2] pt-[170px] ">
+  <section class="landing bg-[#FAF7F2] pt-[86px] md:pt-[170px] min-h-screen relative overflow-hidden ">
     <!-- محتوى القسم -->
-    <div class="flex relative">
-        <img src="imges/download-removebg-preview 1.png" class="absolute w-[200px] h-[200px] top-0 left-0 " alt="">
-<img src="imges/png-clipart-daisies-white-daisy-flowers-illustration-removebg-preview 1.png" class="absolute w-[200px] h-[200px] bottom-0 left-[-29px]" alt="">
-<img src="imges/png-clipart-leaves-roots-root-leaves-removebg-preview 1.png" alt="" class="absolute left-[250px] w-[400px]">
-<img src="imges/png-clipart-leaves-roots-root-leaves-removebg-preview 2.png" alt="" class="absolute left-[250px] bottom-0 w-[400px]" >
-        <div class="content w-full md:w-[60%]">
-            <!-- //content -->
+    <div class="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center h-full w-full max-w-screen-xl mx-auto relative px-4">
+      
+      <!-- الزخارف -->
+      <img src="imges/download-removebg-preview 1.png" class="absolute w-[150px] h-[150px] top-0 left-[-29px] md:w-[200px] md:h-[200px] lg:h-[250px] lg:w-[250px]" alt="">
+      <img src="imges/png-clipart-daisies-white-daisy-flowers-illustration-removebg-preview 1.png" class="absolute w-[150px] h-[150px] md:w-[200px] md:h-[200px] bottom-0 left-[-29px] hidden md:inline-block" alt="">
+      <img src="imges/png-clipart-leaves-roots-root-leaves-removebg-preview 1.png" class="absolute left-[350px]  lg:left-[390px] top-0 w-[400px] hidden lg:inline-block" alt="">
+      <img src="imges/png-clipart-leaves-roots-root-leaves-removebg-preview 2.png" class="absolute left-[350px] bottom-0 w-[400px] lg:left-[390px] hidden lg:inline-block" alt="">
+  
+      <!-- المحتوى -->
+      <div class="flex-1 flex justify-center items-center h-full">
+        <div class="w-full max-w-[400px] text-center">
+          <h1 class="mt-[150px] md:mt-[150px] text-[24px] md:text-[40px] md:text-4xl font-bold mb-4">
+            Rooted in Heritage,<br />
+            Blooming in Beauty
+          </h1>
+          <p class="mb-2 text-[16px] font-light">Authentic Palestinian plants and floral gifts for every home</p>
+          <p class="text-[16px] font-light">Inspired by the gardens of Jerusalem, grown with care in every home.</p>
+          <div class="flex justify-center gap-4 pt-6">
+            <button class="bg-[#A8C686] hover:bg-[#4B5929] text-white font-medium text-lg w-[130px] h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">Shop Now</button>
+            <button class="border border-[#4B5929] text-[#4B5929] font-medium text-lg w-[130px] h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 hover:bg-[#4B5929] hover:text-white shadow-md cursor-pointer">Explore</button>
+          </div>
         </div>
-        <div class="image hidden md:block md:w-[300px] md:h-[500px]">
-            <img src="imges/Group 40.png" alt="" >
-        </div>
-
+      </div>
+  
+      <!-- الصورة اليمنى -->
+      <div class="hidden md:block md:w-[300px] md:h-[500px] mr-3">
+        <img src="imges/Group 40.png" alt="">
+      </div>
+  
     </div>
   </section>
+  
 
   <!-- Scripts -->
   <script src="JS/header.js">
