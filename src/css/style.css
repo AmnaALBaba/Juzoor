@@ -4,8 +4,10 @@
 :root {
     --green:#4B5929;
     --light-green:#4B5929;
-    --nilie:#8B6F47;
+    --nilie:#af926a;
     --red:#B22222
+    --bron:#8B6F47;
+    
 }
 
     body {
@@ -48,6 +50,17 @@ nav a:not(.active):hover ,#mobileNav a:hover{
 
 }
 /* end header  */
-/* start landing  */
+/* start mogilat  */
+.mogilat::after {
+    content :"";
+position: absolute;
+width:100%;
+height:100%;
 
-/* end landing  */
+background-color: rgba(0,0,0,.3);
+z-index: 3;
+top:0;
+left:0;
+
+}
+/* end mogilat  */
