@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>            
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-white font-[Poppins]">
+<body class="bg-white ">
 
-  <section class="w-full bg-white fixed z-50 ">
-    <div class=" mx-auto container sm:px-[10px] w-lg-[1390px]">
+  <section class="w-full bg-white fixed z-50 shadow-sm
+  ">
+    <div class=" containerheader ">
       <header class="flex justify-between items-center gap-6 flex-wrap relative">
         
         <!-- Logo -->
         <div>
             <img src="imges/Logo.png" alt="Logo" 
-            class="w-[160px] h-auto md:w-[170px] md:h-[90px]" />        </div>
+            class="w-[120px] h-auto md:w-[150px] lg:w-[170px]" />        </div>
 
         <!-- Search Bar (visible on md and up) -->
-        <div class="secrch relative hidden md:block">
-            <input type="search"
-            placeholder="Search for product"
-            class="w-[280px] sm:w-[400px] md:w-[380px] lg:w-[500px] xl:w-[700px]  h-[48px] md:h-[55px] border border-[#4B5929] rounded-[10px] px-4 text-base md:text-lg focus:outline-[#4B5929] pr-12 placeholder:text-[#777] placeholder:text-[14px]" />
-     
-          <i class="fa-solid fa-magnifying-glass text-[#4B5929] text-gray-400 absolute right-[21px] top-1/2 -translate-y-1/2"></i>
-        </div>
+      <div class="secrch hidden md:flex items-center relative h-[55px]">
+  <input 
+    type="search"
+    placeholder="Discover nature for your home"
+    class="text-[18px]  sm:w-[400px] md:w-[280px] lg:w-[500px] xl:w-[700px] h-full border border-[#4B5929] rounded-[10px] pl-4 text-base md:text-lg focus:border-[#4B5929] focus:outline-none pr-12 placeholder:text-[#777] placeholder:text-[14px] lg:placeholder:text-[16px]" 
+  />
+  <i class="fa-solid fa-magnifying-glass cursor-pointer text-[#4B5929] text-gray-400 absolute right-[21px] text-[16px]"></i>
+</div>
+
+
 
         <!-- Icons -->
         <div class="flex items-center gap-4 xl:gap-7 text-xl mr-2.5">
 
           <!-- Menu Icon (first on right, hidden on md+) -->
-          <button class="block md:hidden text-xl order-last" id="menuBtn">
-            <i class="fa-solid fa-bars hover:cursor-pointer"></i>
+          <button class="block md:hidden text-2xl order-last" id="menuBtn">
+            <i class="fa-solid fa-bars hover:cursor-pointer  "></i>
           </button>
 
           <!-- Mobile Search Icon -->
@@ -45,31 +51,36 @@
           </button>
 
           <!-- Heart -->
-          <a href="#like" class="transition ">
-            <i class="hover:text-red-500 fa-regular fa-heart text-black text-xl"></i>
+          <a href="favirote.html" class="transition ">
+            <i class="hover:text-[#4B5929] fa-regular fa-heart text-black text-xl lg:text-2xl"></i>
           </a>
 
           <!-- Cart -->
-          <a href="#Cart" class="hover:text-amber-600 transition ">
-            <i class="fa-solid fa-cart-shopping text-xl"></i>
+          <a href="Cart.html" class="hover:text[#4B5929] transition ">
+            <i class="fa-solid fa-cart-shopping text-xl lg:text-2xl hover:text-[#4B5929]"></i>
           </a>
 
           <!-- Login -->
-          <a href="#login" class="text-[#4B5929] font-bold hover:underline text-[20px] hidden md:inline-block">Login</a>
+          <a href="login.html" class="text-[#4B5929] font-bold hover:underline text-[20px] hidden md:inline-block">Login</a>
         </div>
 
         <!-- Mobile Search Input -->
-        <div id="mobileSearchContainer" class="w-full  hidden md:hidden relative mb-2.5">
-          <input type="search"
-            placeholder="Search..."
-            class="w-full h-[50px] border border-[#4B5929] rounded-[10px] px-4 text-base focus:outline-[#4B5929] pr-12 placeholder:text-[#777]" />
-          <i class="fa-solid fa-magnifying-glass text-[#4B5929] text-lg absolute right-[21px] top-1/2 -translate-y-1/2"></i>
+        <div id="mobileSearchContainer" class="w-full hidden md:hidden relative mb-2.5">
+          <div class="flex items-center relative w-full h-[50px] border border-[#4B5929] rounded-[10px] px-4">
+            <input 
+              type="search"
+              placeholder="Search..."
+              class="flex-1 h-full text-[16px] text-base focus:outline-none placeholder:text-[#777] pr-10" 
+            />
+            <i class="fa-solid fa-magnifying-glass text-[#4B5929] text-lg ml-2"></i>
+          </div>
         </div>
 
+
         <!-- Desktop Navigation -->
-        <nav class="w-full items-center justify-center gap-[30px] lg:gap-[50px] mt-[-20px] mb-[26px] font-normal text-[17px] hidden md:flex">
+        <nav class="w-full items-center justify-center gap-[30px] lg:gap-[50px] mt-[-20px] mb-[20px] font-normal md:text-[16px] lg:text-[18px]  hidden md:flex">
           <a href="#Home" class="active">Home</a>
-          <a href="#product">Product</a>
+          <a href="#Products">Product</a>
           <a href="#Tools">Tools</a>
           <a href="#Gifts">Gifts</a>
           <a href="#Journals">Journals</a>
@@ -80,7 +91,7 @@
         <!-- Mobile Navigation - hidden by default -->
         <div id="mobileNav" class="hidden flex-col items-center w-full   bg-white shadow-md rounded-lg text-[18px] font-medium md:hidden flex-wrap text-center">
           <a href="#Home" class="block border-b border-gray-200 py-2">Home</a>
-          <a href="#product" class="block border-b border-gray-200 py-2">Product</a>
+          <a href="#products" class="block border-b border-gray-200 py-2">Product</a>
           <a href="#Tools" class="block border-b border-gray-200 py-2">Tools</a>
           <a href="#Gifts" class="block border-b border-gray-200 py-2">Gifts</a>
           <a href="#Journals" class="block border-b border-gray-200 py-2">Journals</a>
@@ -95,223 +106,477 @@
     </div>
   </section>
 
+   
+
+
   <!-- Landing section -->
-  <section class="landing bg-[#FAF7F2] pt-[86px] md:pt-[145.5px] h-screen relative overflow-hidden ">
+  <section class="px-20 landing bg-[#FAF7F2] pt-[86px] md:pt-[145.5px] h-screen relative overflow-hidden pb-[60px]" id="Home">
     <!-- محتوى القسم -->
-    <div class="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center h-full w-full max-w-screen-xl  relative pr-4">
-      
-      <!-- الزخارف -->
-      <img src="imges/download-removebg-preview 1.png" class="absolute w-[180px] h-[180px] top-0 left-0 md:w-[180px] md:h-[180px] lg:h-[220px] lg:w-[220px]" alt="">
-      <img src="imges/png-clipart-daisies-white-daisy-flowers-illustration-removebg-preview 1.png" class="absolute w-[150px] h-[150px] lg:w-[180px] lg:h-[180px] bottom-0 left-5 hidden md:inline-block" alt="">
-      <img src="imges/png-clipart-leaves-roots-root-leaves-removebg-preview 1.png" class="absolute left-[350px]  xl:left-[450px] top-0 w-[350px] hidden lg:inline-block" alt="">
-      <!-- <img src="imges/png-clipart-leaves-roots-root-leaves-removebg-preview 2.png" class="absolute left-[350px] bottom-[-30px] w-[350px] xl:left-[450px] hidden lg:inline-block " alt=""> -->
-  
-      <!-- المحتوى -->
-      <div class="flex-1 flex justify-center items-center h-full">
-        <div class="w-full max-w-[400px] text-center">
-          <h1 class=" text-[24px] md:text-[36px]  font-bold mb-4">
-            Rooted in Heritage,<br />
-            Blooming in Beauty
+    <div class="flex  justify-center md:justify-between items-center h-full w-full max-w-screen-xl  relative ">
+         <!-- المحتوى -->
+      <div class=" flex  items-center h-full ">
+        <div class="w-full max-w-[500px] text-center md:text-left">
+
+          <h1 class=" text-[30px] md:text-[30px]  lg:text-[40px] font-bold mb-4 relative ">
+            <img src="imges/twemoji_olive.png" alt="" class="absolute right-0 right-[-40px] top hidden lg:block text-[40px]">
+
+            Rooted in <span class="text-[#4B5929]">Heritage,
+              </span>
+              <span class="text-[#4B5929]">Blooming
+                </span
+            <br />
+              in Beauty
           </h1>
-          <p class="mb-2 text-[16px] font-light">Authentic Palestinian plants and floral gifts for every home</p>
-          <p class="text-[16px] font-light">Inspired by the gardens of Jerusalem, grown with care in every home.</p>
-          <div class="flex justify-center gap-4 pt-6 z-10">
-            <button class="bg-[#A8C686] hover:bg-[#4B5929] text-white font-medium text-lg w-[130px] h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">Shop Now</button>
-            <button class="border border-[#4B5929] text-[#4B5929] font-medium text-lg w-[130px] h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 hover:bg-[#4B5929] hover:text-white shadow-md cursor-pointer">Explore</button>
+          <p class="mb-2 text-[16px] font-light leading-normal text-[#5A5A45] leading-relaxed">
+            Every plant, flower, and gift we offer tells a story — of Palestinian roots, timeless beauty, and the joy of giving from the heart. Let nature bloom in your home with the spirit of Palestine in every leaf and petal.
+            
+            </p>
+          <div class="flex justify-center md:justify-start gap-4 pt-6 relative z-10">
+            <a href="#Products">            <button class="bg-[#4B5929]  text-white font-medium text-lg w-[130px] h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer ">Shop Now</button>
+            </a>
+            <img src="imges/twemoji_olive.png"  alt="" class="absolute right-0 left-[150px] top-[0px] hidden md:block w-[60px] lg:hidden">
+
+            <!-- <a href="explore.html">Explore More ></a> -->
+            <!-- <button class="border border-[#4B5929] text-[#4B5929] font-medium text-lg w-[130px] h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 hover:bg-[#4B5929] hover:text-white shadow-md cursor-pointer">Explore</button> -->
           </div>
         </div>
       </div>
   
       <!-- الصورة اليمنى -->
-      <div class="hidden md:block md:w-[310px] md:h-[450px] mr-3 mt-2 xl:w-[320px]">
-        <img src="imges/Group 40.png" alt="">
+      <div class="hidden md:block md:w-[310px] md:h-[450px] pt-[25px] lg:mt-1 xl:w-[400px] relative">
+        <img src="imges/Group 84 (1).png" alt="" >
+        <!-- <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt="" class="absolute right-0 left-[-10px] top-[250px]"> -->
+
       </div>
   
     </div>
   </section>
+  <!-- start product   -->
+  <section class="product relative pt-[60px] pb-[60px] bg-[#FAF7F2] overflow-hidden" id="Products">
+    <div class="head relative flex flex-col items-center justify-center py-10 text-center">
+      <!-- صورة يسار -->
+      <img 
+        src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+        alt="" 
+        class="block absolute left-[20px] md:left-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+        >
+    
+      <!-- صورة يمين -->
+      <img 
+        src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+        alt="" 
+        class=" md:block absolute right-[20px] md:right-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+      >
+    
+      <!-- المحتوى -->
+      <h1 class="font-bold text-[25px] md:text-[30px] lg:text-[40px]">Products</h1>
+      <p class="text-[14px] md:text-[16px] leading-relaxed mt-2 font-bold">
+        Top picks from Palestinian gardens we love
+      </p>
+    </div>
+    
+    
+  <div class="content py-10 px-20"> 
+    content
+  </div>
+  <div class="flex justify-center mt-8 relative">
+    <!-- <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
+    <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" > -->
+    <button class="relative bg-[#4B5929] hover:bg-[#A8C686] text-white font-medium text-lg px-3 h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">
+      <a href="Gifts.html">See More Products > </a>
+    </button>
+  </div>
+
+
+   </section>
+
+   <!-- end product section  -->
   <!-- // فاصل -->
   <section class="mogilat relative lg:h-[300px]">
-    <img src="imges/viktor-mogilat-AKxREMWLZE0-unsplash.png" alt="" class="h-full w-full">
-    <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white font-bold text-[20px] md:text-[25px] lg:text-[35px] z-30 md:w-[530px]">
+    <img src="imges/viktor-mogilat-AKxREMWLZE0-unsplash (1).png" alt="" class="h-full w-full object-cover">
+    
+    <div class="absolute inset-0 flex items-center justify-center z-30">
+      <p class="text-center text-white font-bold text-[20px] md:text-[25px] lg:text-[35px] px-4 md:w-[530px]">
         "The Wind Cannot Uproot Your Roots"
-      </p>  
-    </section>
+      </p>
+    </div>
+  </section>
+  
     <!-- start gift section  -->
-     <section class="gift relative pt-[60px] pb-60px bg-[#FAF7F2] overflow-hidden">
-        <div class="absolute w-[300px] h-[300px] rounded-full 
-  top-[-150px] left-[-150px] 
-  bg-gradient-to-br from-[#E7DED4] to-[#FAF7F2] 
-  shadow-[0_0_60px_20px_rgba(250,247,242,0.5)]">
-</div>
-<div class="absolute w-[300px] h-[300px] rounded-full 
-top-[-150px] right-[-150px] 
-bg-gradient-to-br from-[#E7DED4] to-[#FAF7F2] 
-shadow-[0_0_60px_20px_rgba(250,247,242,0.5)]">
-</div>
-<div class="absolute w-[300px] h-[300px] rounded-full 
-bottom-[-150px] left-[-150px] 
-bg-gradient-to-br from-[#E7DED4] to-[#FAF7F2] 
-shadow-[0_0_60px_20px_rgba(250,247,242,0.5)]">
-</div>
-<div class="absolute w-[300px] h-[300px] rounded-full 
-botoom-[-150px] right-[-150px] 
-bg-gradient-to-br from-[#E7DED4] to-[#FAF7F2] 
-shadow-[0_0_60px_20px_rgba(250,247,242,0.5)]">
-</div>
-        <div class="head text-center"> 
+     
+  <section class="gift relative pt-[60px] pb-[60px] bg-[#FAF7F2] overflow-hidden" id="Gifts">
+      
+
+    <div class="head relative flex flex-col items-center justify-center py-10 text-center">
+      <img 
+        src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+        alt="" 
+        class="block absolute left-[20px] md:left-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+        >
+    
+      <!-- صورة يمين -->
+      <img 
+        src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+        alt="" 
+        class=" md:block absolute right-[20px] md:right-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+      >
             <h1 class="font-bold text-[25px] md:text-[30px] lg:text-[40px] ">Gift Of Palestine</h1>
-            <p class="text-[14px] md:text-[16px]">Thoughtful Keepsakes rooted in the land</p>
+            <p class="text-[14px] md:text-[16px] font-bold">Thoughtful Keepsakes rooted in the land</p>
+
         </div>
-        <img src="imges/Group 57.png" alt="" class="absolute right-6 top-1/2 transform -translate-y-1/2 hidden lg:block">
-        <img src="imges/Group 73.png" alt="" class="absolute left-6 top-1/2  hidden lg:block w-[150px]">
+        <!-- <img src="imges/Group 57.png" alt="" class="absolute right-6 top-1/2 transform -translate-y-1/2 hidden lg:block">
+        <img src="imges/Group 73.png" alt="" class="absolute left-6 top-1/2  hidden lg:block w-[150px]"> -->
 
-        <div class="cards justify-items-center bg-[#FAF7F2] py-10 px-20 lg:px-50">
-            
-            <div class="max-w-7xl mx-auto ">
-              <!-- <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6  mx-auto "> -->
-                <!-- <div class="flex flex-wrap justify-center gap-6"> -->
-                    <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-fit mx-auto justify-items-center"> -->
-                        <div class="flex flex-wrap justify-center gap-6">
-
-                <!-- بطاقة 1 -->
-                <div class="relative rounded-xl overflow-hidden shadow-black-700 shadow-lg hover:shadow-xl bg-white  transition duration-300 w-[350px] md:w-[280px] xl:w-[] ">
-                  <img src="imges/roberta-sorge-uOBApnN_K7w-unsplash.png" class="w-full   object-contain" alt="Gift">
-                  <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full absolute top-4 left-5">
-                    <i class="fas fa-star text-yellow-400 pr-1"></i>
-
-                    Best Seller
-                  </span>
-                  <div class="p-4">
-                    
-                    <h2 class="text-md font-bold mb-1">Taste Of Palestine</h2>
-                    <p class="text-gray-600 text-sm mb-1">Cultural Heritage 🌿</p>
-                    <p class="text-gray-700 text-sm mb-2">A delicious curated olive oil, za’atar in a ceramic jar & handcrafted dipping dish.</p>
-                    <div class=" font-semibold text-lg mb-2">$22.00</div>
-                    <div class="flex justify-between items-center">
-                      <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition cursor-pointer ">
-                        View Gift
-                      </button>
-                      <button class="text-gray-700 hover:text-[#8B6F47] text-xl cursor-pointer ">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                    </div>
+        <div class="cards bg-[#FAF7F2] py-10 px-5 sm:px-10 lg:px-20">
+          <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6 justify-items-center">
+        
+              <!-- بطاقة 1 -->
+              <div class="bg-white card  transition duration-300 rounded-xl overflow-hidden flex flex-row sm:flex-col w-full max-w-sm h-60 sm:h-auto">
+                <img src="imges/roberta-sorge-uOBApnN_K7w-unsplash.png" class="w-1/2 sm:w-full h-full sm:h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" alt="Gift">
+                <div class="p-4 flex flex-col justify-between flex-1">
+                  <!-- <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full mb-2 w-fit">
+                    <i class="fas fa-star text-yellow-400 pr-1"></i> Best Seller
+                  </span> -->
+                  <h2 class="text-md font-bold mb-1">Taste Of Palestine</h2>
+                  <p class="text-gray-600 text-sm mb-1">Cultural Heritage 🌿</p>
+                  <p class="text-gray-700 text-sm mb-2">A delicious curated olive oil, za’atar in a ceramic jar & handcrafted dipping dish.</p>
+                  <div class="font-semibold text-lg mb-2">$22.00</div>
+                  <div class="flex justify-between items-center">
+                    <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition">View Gift</button>
+                    <button class="text-gray-700 hover:text-[#8B6F47] text-xl">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                   </div>
                 </div>
-                <!-- card2  -->
-                <div class="relative rounded-xl overflow-hidden shadow-black-700 shadow-lg hover:shadow-xl bg-white  transition duration-300 w-[350px]  md:w-[280px]">
-                    <img src="imges/010519f6-ea7b-42ca-be24-476a49f4c3ad.png" class="w-full  object-contain" alt="Gift">
-                    <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full absolute top-4 left-5">
-                      <i class="fas fa-star text-yellow-400 pr-1"></i>
-  
-                      Handmade
-                    </span>
-                    <div class="p-4">
-                      
-                      <h2 class="text-md font-bold mb-1">Hand-Embroidered Tatreez Clutch</h2>
-                      <p class="text-gray-600 text-sm mb-1">Perfect for Eid 💝</p>
-                      <p class="text-gray-700 text-sm mb-2">A modern accessory featuring traditional Palestinian embroidery.</p>
-                      <div class=" font-semibold text-lg mb-2">$40.00</div>
-                      <div class="flex justify-between items-center">
-                        <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition cursor-pointer ">
-                          View Gift
-                        </button>
-                        <button class="text-gray-700 hover:text-[#8B6F47] text-xl cursor-pointer ">
-                          <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 3 -->
-                  <div class="relative rounded-xl overflow-hidden shadow-black-700 shadow-lg hover:shadow-xl bg-white  transition duration-300 w-[350px]  md:w-[280px]">
-                    <img src="imges/Vela natural hecha con cera de soja y aceites….png" class="w-full  object-contain" alt="Gift">
-                    <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full absolute top-4 left-5">
-                      <i class="fas fa-star text-yellow-400 pr-1"></i>
-  
-                      Wedding Keepsake
-                    </span>
-                    <div class="p-4">
-                      
-                      <h2 class="text-md font-bold mb-1">Olive Wood Candle</h2>
-                      <p class="text-gray-600 text-sm mb-1">From Bethlehem 🕯️</p>
-                      <p class="text-gray-700 text-sm mb-2">Handcrafted from Bethlehem’s olive wood..</p>
-                      <div class=" font-semibold text-lg mb-2">$22.00</div>
-                      <div class="flex justify-between items-center">
-                        <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition cursor-pointer ">
-                          View Gift
-                        </button>
-                        <button class="text-gray-700 hover:text-[#8B6F47] text-xl cursor-pointer ">
-                          <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 4  -->
-                  <div class="relative rounded-xl overflow-hidden shadow-black-700 shadow-lg hover:shadow-xl bg-white  transition duration-300 w-[350px] md:w-[280px]">
-                    <img src="imges/f769ad49-1fc1-4c9c-b61e-6f8308e2897d.png" class="w-full  object-contain" alt="Gift">
-                    <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full absolute top-4 left-5">
-                      <i class="fas fa-star text-yellow-400 pr-1"></i>
-  
-                      Hand-Painted
-                    </span>
-                    <div class="p-4">
-                      
-                      <h2 class="text-md font-bold mb-1">Tatreez Mug</h2>
-                      <p class="text-gray-600 text-sm mb-1">Modern Style ☕</p>
-                      <p class="text-gray-700 text-sm mb-2">A ceramic mug featuring traditional Palestinian embroidery patterns.</p>
-                      <div class=" font-semibold text-lg mb-2">$35.00</div>
-                      <div class="flex justify-between items-center">
-                        <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition cursor-pointer ">
-                          View Gift
-                        </button>
-                        <button class="text-gray-700 hover:text-[#8B6F47] text-xl cursor-pointer ">
-                          <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card 5  -->
-                  <div class="relative rounded-xl overflow-hidden shadow-black-700 shadow-lg hover:shadow-xl bg-white  transition duration-300 w-[350px] md:w-[280px]">
-                    <img src="imges/sanju-pandita-xcVkgD7bcLA-unsplash.png" class="w-full  object-contain" alt="Gift">
-                    <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full absolute top-4 left-5">
-                      <i class="fas fa-star text-yellow-400 pr-1"></i>
-  
-                      Artisan Crafted
-                    </span>
-                    <div class="p-4">
-                      
-                      <h2 class="text-md font-bold mb-1">Jasmine & Linen Set</h2>
-                      <p class="text-gray-600 text-sm mb-1">Welcome Box Gift 🎁</p>
-                      <p class="text-gray-700 text-sm mb-2">A soothing blend of jasmine tea paired with handcrafted linen napkin.</p>
-                      <div class=" font-semibold text-lg mb-2">$23.00</div>
-                      <div class="flex justify-between items-center">
-                        <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition cursor-pointer ">
-                          View Gift
-                        </button>
-                        <button class="text-gray-700 hover:text-[#8B6F47] text-xl cursor-pointer ">
-                          <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                 
-          
-          
-          
               </div>
+        
+              <!-- بطاقة 2 -->
+              <div class="bg-white card transition duration-300 rounded-xl overflow-hidden flex flex-row sm:flex-col w-full max-w-sm h-60 sm:h-auto">
+                <img src="imges/010519f6-ea7b-42ca-be24-476a49f4c3ad.png" class="w-1/2 sm:w-full h-full sm:h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" alt="Gift">
+                <div class="p-4 flex flex-col justify-between flex-1">
+                  <!-- <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full mb-2 w-fit">
+                    <i class="fas fa-star text-yellow-400 pr-1"></i> Handmade
+                  </span> -->
+                  <h2 class="text-md font-bold mb-1">Tatreez Clutch</h2>
+                  <p class="text-gray-600 text-sm mb-1">Perfect for Eid 💝</p>
+                  <p class="text-gray-700 text-sm mb-2">A modern accessory featuring traditional Palestinian embroidery.</p>
+                  <div class="font-semibold text-lg mb-2">$40.00</div>
+                  <div class="flex justify-between items-center">
+                    <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition">View Gift</button>
+                    <button class="text-gray-700 hover:text-[#8B6F47] text-xl">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- بطاقة 3 -->
+              <!-- <div class="bg-white card transition duration-300 rounded-xl overflow-hidden flex flex-row sm:flex-col w-full max-w-sm h-60 sm:h-auto">
+                <img src="imges/Vela natural hecha con cera de soja y aceites….png" class="w-1/2 sm:w-full h-full sm:h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" alt="Gift">
+                <div class="p-4 flex flex-col justify-between flex-1">
+                  
+                  <h2 class="text-md font-bold mb-1">Olive Wood Candle</h2>
+                  <p class="text-gray-600 text-sm mb-1">From Bethlehem 🕯️</p>
+                  <p class="text-gray-700 text-sm mb-2">Handcrafted from Bethlehem’s olive wood.</p>
+                  <div class="font-semibold text-lg mb-2">$22.00</div>
+                  <div class="flex justify-between items-center">
+                    <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition">View Gift</button>
+                    <button class="text-gray-700 hover:text-[#8B6F47] text-xl">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+        
+              <!-- بطاقة 4 -->
+              <div class="bg-white card transition duration-300 rounded-xl overflow-hidden flex flex-row sm:flex-col w-full max-w-sm h-60 sm:h-auto">
+                <img src="imges/f769ad49-1fc1-4c9c-b61e-6f8308e2897d.png" class="w-1/2 sm:w-full h-full sm:h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" alt="Gift">
+                <div class="p-4 flex flex-col justify-between flex-1">
+                  <!-- <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full mb-2 w-fit">
+                    <i class="fas fa-star text-yellow-400 pr-1"></i> Hand-Painted
+                  </span> -->
+                  <h2 class="text-md font-bold mb-1">Tatreez Mug</h2>
+                  <p class="text-gray-600 text-sm mb-1">Modern Style ☕</p>
+                  <p class="text-gray-700 text-sm mb-2">A ceramic mug featuring traditional Palestinian embroidery patterns.</p>
+                  <div class="font-semibold text-lg mb-2">$35.00</div>
+                  <div class="flex justify-between items-center">
+                    <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition">View Gift</button>
+                    <button class="text-gray-700 hover:text-[#8B6F47] text-xl">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- بطاقة 5 -->
+               <div class="bg-white shadow-xl hover:shadow-2xl transition duration-300 rounded-xl overflow-hidden flex flex-row sm:flex-col w-full max-w-sm h-60 sm:h-auto">
+                <img src="imges/sanju-pandita-xcVkgD7bcLA-unsplash.png" class="w-1/2 sm:w-full h-full sm:h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" alt="Gift">
+                <div class="p-4 flex flex-col justify-between flex-1">
+                  
+                  <h2 class="text-md font-bold mb-1">Jasmine & Linen Set</h2>
+                  <p class="text-gray-600 text-sm mb-1">Welcome Box Gift 🎁</p>
+                  <p class="text-gray-700 text-sm mb-2">A soothing blend of jasmine tea paired with handcrafted linen napkin.</p>
+                  <div class="font-semibold text-lg mb-2">$23.00</div>
+                  <div class="flex justify-between items-center">
+                    <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition">View Gift</button>
+                    <button class="text-gray-700 hover:text-[#8B6F47] text-xl">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+        
             </div>
           </div>
-          <div class="flex justify-center mt-8">
-            <button class="bg-[#A8C686] hover:bg-[#4B5929] text-white font-medium text-lg px-3 h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">
+        </div>
+        
+       
+        
+
+        
+          <div class="flex justify-center mt-8 relative">
+            <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
+            <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" >
+
+            <button class="relative bg-[#4B5929] hover:bg-[#A8C686] text-white font-medium text-lg px-3 h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">
               <a href="Gifts.html">See More Gifts > </a>
             </button>
           </div>
 <!-- <button class="p">
-    <a href="Gifts.html" class=""> See More Gifts</a></button>
-     </section> -->
+    <a href="Gifts.html" class=""> See More Gifts</a></button> -->
+     </section> 
 
      <!-- end gift section  -->
-   
+         <!-- start tools section  -->
+         <section class="tools pt-[60px] pb-[60px] id="Tools">
+          <div class="head relative flex flex-col items-center justify-center py-10 text-center">
+            <img 
+            src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+            alt="" 
+            class="block absolute left-[20px] md:left-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+            >
+        
+          <!-- صورة يمين -->
+          <img 
+            src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+            alt="" 
+            class=" md:block absolute right-[20px] md:right-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+          >
+  
+            <h1 class="font-bold text-[25px] md:text-[30px] lg:text-[40px] ">Tools & Care</h1>
+            <p class="text-[14px] md:text-[16px] font-bold">Because every leaf deserves a little extra care</p>
+        </div>
+        <!-- content  -->
+        
+          
+                   
+        <div class="cardss customegrid px-20">
+          <!-- بطاقة -->
+          <div class="card relative rounded-xl overflow-hidden bg-white transition duration-300">
+            
+            <!-- overlay -->
+            <img src="imges/Keep ALIVE_ 10 Best LOW Light Indoor Plants (Easy….png"
+                 alt=""
+                 class="relative w-full h-full object-cover transition-transform duration-700 ease-in-out hover:scale-110 hover:rotate-3 cursor-pointer">
+        
+            <!-- المحتوى داخل البطاقة -->
+            <div class="card-content text-white text-center">
+              <h2 class="card-title text-xl md:text-2xl font-bold transition-transform">Pots</h2>
+              <button class="card-button bg-[#8B6F47] text-white px-6 py-2 rounded-full mt-4 transition-transform">See All</button>
+            </div>
+        
+          </div>
+        
+          <div class="card relative rounded-xl overflow-hidden bg-white transition duration-300">
+            <img src="imges/Person Holding Green Succulent Plant · Free Stock….png"
+                 alt=""
+                 class="relative w-full h-full object-cover transition-transform duration-700 ease-in-out hover:scale-110 hover:rotate-3 cursor-pointer">
+            <div class="card-content text-white text-center">
+              <h2 class="card-title text-xl md:text-2xl  font-bold transition-transform">Care</h2>
+              <button class="card-button bg-[#8B6F47] text-white px-6 py-2 rounded-full mt-4 transition-transform">See All</button>
+            </div>
+          </div>
+        
+          <div class="card relative rounded-xl overflow-hidden bg-white transition duration-300">
+            <img src="imges/Monstera Macrame Wristlet, Leaf Macrame Wristlet….png"
+                 alt=""
+                 class="relative w-full h-full object-cover transition-transform duration-700 ease-in-out hover:scale-110 hover:rotate-3 cursor-pointer">
+            <div class="card-content text-white text-center">
+              <h2 class="card-title text-xl md:text-2xl  font-bold transition-transform">Accessories</h2>
+              <button class="card-button bg-[#8B6F47] text-white px-6 py-2 rounded-full mt-4 transition-transform">See All</button>
+            </div>
+          </div>
+          <div class="card relative rounded-xl overflow-hidden bg-white transition duration-300">
+            <img src="imges/Monstera Macrame Wristlet, Leaf Macrame Wristlet….png"
+                 alt=""
+                 class="relative w-full h-full object-cover transition-transform duration-700 ease-in-out hover:scale-110 hover:rotate-3 cursor-pointer">
+            <div class="card-content text-white text-center">
+              <h2 class="card-title text-xl md:text-2xl  font-bold transition-transform">Accessories</h2>
+              <button class="card-button bg-[#8B6F47] text-white px-6 py-2 rounded-full mt-4 transition-transform">See All</button>
+            </div>
+          </div>
+        </div>
+        
+        
+              
+                   
+            
+            
+            
+            
+                   
+                   
+                   
+            
+            
+            
+                </div>
+              </div>
+            </div>
+        
+       
+         
+         </section>
+         <!-- end tools section  -->
+             <!-- start seller section  -->
+      <section class="seller pt-[60px] pb-[60px] bg-[#FAF7F2]">
+        <div class="head relative flex flex-col items-center  py-10 ">
+        
+          <h2 class="font-bold text-[25px] md:text-[30px] lg:text-[40px] ">The Seller Community</h2>
+          <p class="text-[14px] md:text-[16px] font-bold">Meet the people behind the plants - growing with love, care, and a deep connection to the land</p>
+      </div>
+      <!-- content  -->
+      <div class="content py-10 px-20"> 
+        content
+      </div>
+      <div class="flex justify-center mt-8 relative">
+        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
+        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" >
+
+        
+      </div>
+       
+       </section>
+       <!-- end sellers section  -->
+      <!-- start voices section  -->
+      <section class="voices pt-[60px] pb-[60px]">
+        <div class="head relative flex flex-col items-center justify-center py-10 text-center">
+          <img 
+          src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+          alt="" 
+          class="block absolute left-[20px] md:left-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+          >
       
+        <!-- صورة يمين -->
+        <img 
+          src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+          alt="" 
+          class=" md:block absolute right-[20px] md:right-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+        >
+
+          <h1 class="font-bold text-[25px] md:text-[30px] lg:text-[40px] ">Voices Rooted in Trust</h1>
+          <p class="text-[14px] md:text-[16px] font-bold">From Gaza to Galiee, these voices bloom like jasmin</p>
+      </div>
+      <!-- content  -->
+      <div class="content py-10 px-20"> 
+        content
+      </div>
+      <div class="flex justify-center mt-8 relative">
+        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
+        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" >
+
+        <button class="relative bg-[#4B5929] hover:bg-[#A8C686] text-white font-medium text-lg px-3 h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">
+          <a href="Gifts.html">See More Voices > </a>
+        </button>
+      </div>
+       
+       </section>
+       <!-- end voices section  -->
+   
+      <!-- start contact section  -->
+       <section class="contact pt-[60px] pb-[60px]" id="contact">
+
+        <div class="content py-10 px-20"> 
+          content
+        </div>     
+        </section>
+       <!-- end contact section  -->
+        <!-- start section jouranl  -->
+         <section class="journal relative pt-[60px] pb-[60px] bg-[#FAF7F2] overflow-hidden bg-white" id="Journals">
+          <div class="head relative flex flex-col items-center justify-center py-10 text-center">
+            <img 
+        src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+        alt="" 
+        class="block absolute left-[20px] md:left-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+        >
+    
+      <!-- صورة يمين -->
+      <img 
+        src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
+        alt="" 
+        class=" md:block absolute right-[20px] md:right-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
+      >
+
+            <h1 class="font-bold text-[25px] md:text-[30px] lg:text-[40px] ">The Olive Journal</h1>
+            <p class="text-[14px] md:text-[16px] font-bold">Ajournal of tradition, nature, and the hands that keep them alive</p>
+        </div>
+        <!-- content  -->
+        <div class="content  px-20 lg:px-50 flex flex-col md:flex-row justify-between items-center  gap-6 "> 
+          <div class="cart  p-3 lg:w-[280px]  flex flex-row items-between sm:flex-col w-full max-w-sm h-60 sm:h-auto">
+            <div class="image relative z-3 mb-3  w-[50%] sm:w-full">
+              <div class="overflow-hidden w-full h-full rounded-2xl">
+                <img src="imges/flor-saurina-xWijL2q3xAM-unsplash.png" alt=""
+                  class="shadow-lg w-full h-full cursor-pointer hover:scale-110 z-4 block transition-transform duration-300">
+              </div>
+            </div>
+            <div class="content flex flex-col justify-center md:px-2 pl-4 w-[50%] sm:w-full">
+              <p class="font-bold text-[18px] pt-2">Olive Trees: More Than Just Fruit</p>
+              <p class="text-gray-600 text-[14px]">Discover the tree that holds generations of love, land, and loss</p>
+            </div>
+          </div>
+          <div class="cart  p-3 lg:w-[350px]  flex flex-row items-between sm:flex-col w-full max-w-sm h-60 sm:h-auto">
+            <div class="image relative z-3 mb-3  w-[50%] sm:w-full">
+              <div class="overflow-hidden w-full h-full rounded-2xl">
+                <img src="imges/pexels-alfomedeiros-19544029.png" alt=""
+                  class="shadow-lg w-full h-full cursor-pointer hover:scale-110 z-4 block transition-transform duration-300">
+              </div>
+            </div>
+            <div class="content flex flex-col justify-center md:px-2 pl-4 w-[50%] sm:w-full">
+              <p class="font-bold text-[18px] pt-2">The story Of the Kufiya</p>
+              <p class="text-gray-600 text-[14px]">Explore the roots of Palestines most iconic thread</p>
+            </div>
+          </div>
+          <div class="cart  p-3 lg:w-[280px]  flex flex-row items-between sm:flex-col w-full max-w-sm h-60 sm:h-auto">
+            <div class="image   relative z-3 mb-3  w-[50%] sm:w-full">
+              <div class=" w-full h-full overflow-hidden  rounded-2xl">
+                <img src="imges/7ebe9701-9d09-46bf-875e-7bf3e26817fc.png" alt=""
+                  class="shadow-lg w-full h-full cursor-pointer hover:scale-110 z-4 block transition-transform duration-300">
+              </div>
+            </div>
+            <div class="content flex flex-col justify-center md:px-2 pl-4 w-[50%] sm:w-full">
+              <p class="font-bold text-[18px] pt-2">How to Care For A Zaater Plant?</p>
+              <p class="text-gray-600 text-[14px]">A beginners guide to planning, watering, and harvestingg zaatar at home<</p>
+            </div>
+          </div>
+          
+
+
+          
+        </div>
+        <div class="flex justify-center mt-8 relative">
+          <!-- <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
+          <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" > -->
+
+          <button class="relative bg-[#4B5929] hover:bg-[#A8C686] text-white font-medium text-lg px-3 h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">
+            <a href="Gifts.html">See More Journals > </a>
+          </button>
+        </div>
+
+
+         </section>
+
+         <!-- end journal section  -->
     
 
   <!-- Scripts -->

@@ -63,3 +63,16 @@ navLinks.forEach(link => {
     this.classList.add('active');
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  // حدد قائمة الجوال
+  const mobileNav = document.getElementById("mobileNav");
+  // حدد جميع الروابط داخل القائمة
+  const navLinks = mobileNav.querySelectorAll("a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.add("hidden");
+      mobileNav.classList.remove("flex");
+    });
+  });
+});
