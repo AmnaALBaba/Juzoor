@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link href="./output.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/mary.css"> -->
+
 </head>
 <body class="bg-white ">
 
@@ -21,9 +23,9 @@
       <header class="flex justify-between items-center gap-6 flex-wrap relative">
         
         <!-- Logo -->
-        <div>
+        <a href="index.html">
             <img src="imges/Logo.png" alt="Logo" 
-            class="w-[120px] h-auto md:w-[150px] lg:w-[170px]" />        </div>
+            class="w-[120px] h-auto md:w-[150px] lg:w-[170px]" />        </a>
 
         <!-- Search Bar (visible on md and up) -->
       <div class="secrch hidden md:flex items-center relative h-[55px]">
@@ -152,7 +154,7 @@
     </div>
   </section>
   <!-- start product   -->
-  <section class="product relative pt-[60px] pb-[60px] bg-[#FAF7F2] overflow-hidden" id="Products">
+  <section class="product relative pt-[60px] pb-[60px] bg-white overflow-hidden" id="Products">
     <div class="head relative flex flex-col items-center justify-center py-10 text-center">
       <!-- صورة يسار -->
       <img 
@@ -174,16 +176,202 @@
         Top picks from Palestinian gardens we love
       </p>
     </div>
+   
+    
+  <div class="content "> 
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+    <div class="cards  py-10 px-5 sm:px-10 lg:px-20 max-w-7xl mx-auto">
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6 justify-items-center">
+    
+        <!-- بطاقة 1 -->
+        <div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer">
+          <div class="relative w-full h-60 overflow-hidden">
+            <img src="imges/ma1.png" alt="Olive Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+            <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+            <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Olive Tree</p>
+          </div>
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+              <span class="line-through text-gray-400">$15</span>
+              <span class="text-[#af926a] font-semibold">$10</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+              <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+              <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- بطاقة 2 -->
+        <div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer">
+          <div class="relative w-full h-60 overflow-hidden">
+            <img src="imges/ma2.png" alt="Chamomile" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+            <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+            <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Chamomile</p>
+          </div>
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+              <span class="line-through text-gray-400">$25</span>
+              <span class="text-[#af926a] font-semibold">$20</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+              <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+              <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- بطاقة 3 -->
+        <div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer">
+          <div class="relative w-full h-60 overflow-hidden">
+            <img src="imges/ma3.png" alt="Mint" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+            <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+            <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Mint</p>
+          </div>
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+              <span class="line-through text-gray-400">$15</span>
+              <span class="text-[#af926a] font-semibold">$10</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+              <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+              <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- بطاقة 4 -->
+        <div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer">
+          <div class="relative w-full h-60 overflow-hidden">
+            <img src="imges/ma4.png" alt="Jasmine" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+            <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+            <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Jasmine</p>
+          </div>
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+              <span class="line-through text-gray-400">$20</span>
+              <span class="text-[#af926a] font-semibold">$15</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+              <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+              <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+            </div>
+          </div>
+        </div>
+    
+       <!-- 5  -->
+       <div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer">
+        <div class="relative w-full h-60 overflow-hidden">
+          <img src="imges/ma5.png" alt="Anemone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Anemone</p>
+        </div>
+        <div class="p-4">
+          <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+            <span class="line-through text-gray-400">$10</span>
+            <span class="text-[#af926a] font-semibold">$5</span>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+            <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+            <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer">
+        <div class="relative w-full h-60 overflow-hidden">
+          <img src="imges/ma6.png" alt="Fig Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Fig Tree</p>
+        </div>
+        <div class="p-4">
+          <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+            <span class="line-through text-gray-400">$30</span>
+            <span class="text-[#af926a] font-semibold">$25</span>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+            <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+            <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+          </div>
+        </div>
+      </div>
+<!-- 7       -->
+<div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer">
+  <div class="relative w-full h-60 overflow-hidden">
+    <img src="imges/ma7.png" alt="Poppy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+    <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+      <i class="fa-solid fa-heart"></i>
+    </button>
+    <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Poppy</p>
+  </div>
+  <div class="p-4">
+    <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+      <span class="line-through text-gray-400">$20</span>
+      <span class="text-[#af926a] font-semibold">$15</span>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+      <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+      <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+    </div>
+  </div>
+</div>
+<!-- 8 -->
+<div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer">
+  <div class="relative w-full h-60 overflow-hidden">
+    <img src="imges/ma8.png" alt="Aloe Vera" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+    <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+      <i class="fa-solid fa-heart"></i>
+    </button>
+    <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Aloe Vera</p>
+  </div>
+  <div class="p-4">
+    <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+      <span class="line-through text-gray-400">$10</span>
+      <span class="text-[#af926a] font-semibold">$5</span>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+      <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+      <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+    </div>
+  </div>
+  
+</div>
+
+    
+      </div>
+    </div>
     
     
-  <div class="content py-10 px-20"> 
-    content
+     
+    
   </div>
   <div class="flex justify-center mt-8 relative">
     <!-- <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
     <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" > -->
     <button class="relative bg-[#4B5929] hover:bg-[#A8C686] text-white font-medium text-lg px-3 h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">
-      <a href="Gifts.html">See More Products > </a>
+      <a href="product.html">See More Products > </a>
     </button>
   </div>
 
@@ -235,9 +423,7 @@
               <div class="bg-white card  transition duration-300 rounded-xl overflow-hidden flex flex-row sm:flex-col w-full max-w-sm h-60 sm:h-auto">
                 <img src="imges/roberta-sorge-uOBApnN_K7w-unsplash.png" class="w-1/2 sm:w-full h-full sm:h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" alt="Gift">
                 <div class="p-4 flex flex-col justify-between flex-1">
-                  <!-- <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full mb-2 w-fit">
-                    <i class="fas fa-star text-yellow-400 pr-1"></i> Best Seller
-                  </span> -->
+                 
                   <h2 class="text-md font-bold mb-1">Taste Of Palestine</h2>
                   <p class="text-gray-600 text-sm mb-1">Cultural Heritage 🌿</p>
                   <p class="text-gray-700 text-sm mb-2">A delicious curated olive oil, za’atar in a ceramic jar & handcrafted dipping dish.</p>
@@ -255,9 +441,7 @@
               <div class="bg-white card transition duration-300 rounded-xl overflow-hidden flex flex-row sm:flex-col w-full max-w-sm h-60 sm:h-auto">
                 <img src="imges/010519f6-ea7b-42ca-be24-476a49f4c3ad.png" class="w-1/2 sm:w-full h-full sm:h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" alt="Gift">
                 <div class="p-4 flex flex-col justify-between flex-1">
-                  <!-- <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full mb-2 w-fit">
-                    <i class="fas fa-star text-yellow-400 pr-1"></i> Handmade
-                  </span> -->
+                 
                   <h2 class="text-md font-bold mb-1">Tatreez Clutch</h2>
                   <p class="text-gray-600 text-sm mb-1">Perfect for Eid 💝</p>
                   <p class="text-gray-700 text-sm mb-2">A modern accessory featuring traditional Palestinian embroidery.</p>
@@ -271,31 +455,13 @@
                 </div>
               </div>
         
-              <!-- بطاقة 3 -->
-              <!-- <div class="bg-white card transition duration-300 rounded-xl overflow-hidden flex flex-row sm:flex-col w-full max-w-sm h-60 sm:h-auto">
-                <img src="imges/Vela natural hecha con cera de soja y aceites….png" class="w-1/2 sm:w-full h-full sm:h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" alt="Gift">
-                <div class="p-4 flex flex-col justify-between flex-1">
-                  
-                  <h2 class="text-md font-bold mb-1">Olive Wood Candle</h2>
-                  <p class="text-gray-600 text-sm mb-1">From Bethlehem 🕯️</p>
-                  <p class="text-gray-700 text-sm mb-2">Handcrafted from Bethlehem’s olive wood.</p>
-                  <div class="font-semibold text-lg mb-2">$22.00</div>
-                  <div class="flex justify-between items-center">
-                    <button class="bg-[#af926a] text-white text-sm px-4 py-2 rounded-md hover:bg-[#8B6F47] transition">View Gift</button>
-                    <button class="text-gray-700 hover:text-[#8B6F47] text-xl">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
-                  </div>
-                </div>
-              </div> -->
+             
         
               <!-- بطاقة 4 -->
               <div class="bg-white card transition duration-300 rounded-xl overflow-hidden flex flex-row sm:flex-col w-full max-w-sm h-60 sm:h-auto">
                 <img src="imges/f769ad49-1fc1-4c9c-b61e-6f8308e2897d.png" class="w-1/2 sm:w-full h-full sm:h-auto object-cover cursor-pointer hover:scale-105 transition duration-300" alt="Gift">
                 <div class="p-4 flex flex-col justify-between flex-1">
-                  <!-- <span class="inline-block bg-[#A8C686] text-black text-sm font-normal px-3 py-2 rounded-full mb-2 w-fit">
-                    <i class="fas fa-star text-yellow-400 pr-1"></i> Hand-Painted
-                  </span> -->
+                 
                   <h2 class="text-md font-bold mb-1">Tatreez Mug</h2>
                   <p class="text-gray-600 text-sm mb-1">Modern Style ☕</p>
                   <p class="text-gray-700 text-sm mb-2">A ceramic mug featuring traditional Palestinian embroidery patterns.</p>
@@ -336,8 +502,8 @@
 
         
           <div class="flex justify-center mt-8 relative">
-            <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
-            <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" >
+            <!-- <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
+            <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" > -->
 
             <button class="relative bg-[#4B5929] hover:bg-[#A8C686] text-white font-medium text-lg px-3 h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">
               <a href="Gifts.html">See More Gifts > </a>
@@ -348,7 +514,7 @@
      </section> 
 
      <!-- end gift section  -->
-<<<<<<< HEAD
+
          <!-- start tools section  -->
          <section class="tools pt-[60px] pb-[60px] id="Tools">
           <div class="head relative flex flex-col items-center justify-center py-10 text-center">
@@ -578,11 +744,11 @@
          </section>
 
          <!-- end journal section  -->
-=======
+
   
   
-  
->>>>>>> 3775b5ba744a24e18483a7f49c705425d473dd74
+
+
     
 
   <!-- Scripts -->
