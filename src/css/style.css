@@ -213,7 +213,17 @@ nav a:not(.active):hover,
   transform: translateY(-20px);
 }
 
-
+.imging::after {
+  position:absolute;
+  content:"";
+  width: 40px;
+  height:calc(100% + 20px);
+  top:-10px;
+  left:-20px;
+  background-color:var(--green);
+  z-index: 1; 
+  border-radius: 5px;
+}
 
 
 

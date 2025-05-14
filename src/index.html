@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home page</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -17,8 +18,7 @@
 </head>
 <body class="bg-white ">
 
-  <section class="w-full bg-white fixed z-50 shadow-sm
-  ">
+  <section class="w-full bg-white fixed z-50 shadow-sm">
     <div class=" containerheader ">
       <header class="flex justify-between items-center gap-6 flex-wrap relative">
         
@@ -516,12 +516,12 @@
      <!-- end gift section  -->
 
  <!-- الفاصل  -->
-     <section class="mogilat relative lg:h-[250px] bg-gray-100">
+     <section class="mogilat relative lg:h-[250px] bg-gray-10">
       
       <div class="  flex items-center justify-evenly z-30">
         <img src="imges/83e9dbc5-fe07-486a-91c3-8a0f8c0ff05e-removebg-preview (1).png" alt="" class="">
 
-        <p class="  font-bold text-[20px] md:text-[25px] lg:text-[35px] px-4 md:w-[330px]">
+        <p class="  font-bold text-[20px] md:text-[25px] lg:text-[35px] px-4 ">
           "Every folds holds a story"
         </p>
       </div>
@@ -659,15 +659,79 @@
           <p class="text-[14px] md:text-[16px] font-bold">From Gaza to Galiee, these voices bloom like jasmin</p>
       </div>
       <!-- content  -->
-      <div class="content py-10 px-20"> 
-        content
+      <div class="content py-5 px-4 sm:px-6 md:px-20">
+        <div class="flex flex-wrap gap-6 justify-center ">
+          
+          <!-- Card 1 -->
+          <div class="bg-[#A8C686]/50 shadow-xl rounded-lg p-8 flex items-center gap-4 relative">
+            <!-- صورة الزخرفة على اليمين -->
+            <img src="imges/Group 59.png" alt="" class="absolute right-2 w-10 hidden lg:inline-block">
+          
+            <!-- الصورة الشخصية داخل div يحتوي على after -->
+            <div class="imging relative w-16 md:w-20 lg:w-36 flex-shrink-0 after:w-[20px] after:left-[-10px] after:md:w-[40px] after:md:left-[-20px]">
+              <img src="imges/088e081a-65fa-4068-9219-2cc7ae45cb40.png" alt="User" class="relative z-10 w-full h-full object-cover">
+            </div>
+          
+            <!-- النص والمحتوى -->
+            <div class="content flex flex-col justify-center">
+              <h3 class="text-md  font-bold text-[#4B5929] flex items-center">
+                Mary Eqdaih
+                <span class="ml-2 text-blue-500 text-sm">&#x2713;</span>
+              </h3>
+              <div class="flex items-center mt-1">
+                <span class="text-yellow-400 text-xl">&#9733;</span>
+                <span class="text-yellow-400 text-xl">&#9733;</span>
+                <span class="text-yellow-400 text-xl">&#9733;</span>
+                <span class="text-yellow-400 text-xl">&#9733;</span>
+                <span class="text-white text-xl">&#9733;</span>
+              </div>
+              <p class="mt-1 md:mt-2 text-sm text-gray-700 max-w-[200px] font-bold">
+                Reminds me of my teta’s garden. The zaatar was perfect.
+              </p>
+            </div>
+          </div>
+          
+          
+      
+          <!-- Card 2 -->
+          <div class="bg-[#A8C686]/50 shadow-xl rounded-lg p-8 flex items-center gap-4 relative">
+            <!-- صورة الزخرفة على اليمين -->
+            <img src="imges/Group 59.png" alt="" class="absolute right-2 w-10 hidden lg:inline-block">
+          
+            <!-- الصورة الشخصية داخل div يحتوي على after -->
+            <div class="imging relative w-16 md:w-20 lg:w-36 flex-shrink-0 after:w-[20px] after:left-[-10px] after:md:w-[40px] after:md:left-[-20px]">
+              <img src="imges/Young smiling fair-haired woman in a garden….png" alt="User" class="relative z-10 w-full h-full object-cover">
+            </div>
+          
+            <!-- النص والمحتوى -->
+            <div class="content flex flex-col justify-center">
+              <h3 class="text-lg font-bold text-[#4B5929] flex items-center">
+                Amna Emad
+                <span class="ml-2 text-blue-500 text-sm">&#x2713;</span>
+              </h3>
+              <div class="flex items-center mt-1">
+                <span class="text-yellow-400 text-xl">&#9733;</span>
+                <span class="text-yellow-400 text-xl">&#9733;</span>
+                <span class="text-yellow-400 text-xl">&#9733;</span>
+                <span class="text-yellow-400 text-xl">&#9733;</span>
+                <span class="text-yellow-400 text-xl">&#9733;</span>
+              </div>
+              <p class="mt-2 text-sm text-gray-700 max-w-[200px] font-bold">
+                Lovely tea set, just wished the shipping was faster.
+              </p>
+            </div>
+          </div>
+          
+      
+        </div>
       </div>
+      
       <div class="flex justify-center mt-8 relative">
-        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
-        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" >
+        <!-- <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
+        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" > -->
 
         <button class="relative bg-[#4B5929] hover:bg-[#A8C686] text-white font-medium text-lg px-3 h-[50px] rounded-[10px] transition-all duration-300 transform hover:scale-105 shadow-md cursor-pointer">
-          <a href="Gifts.html">See More Voices > </a>
+          <a href="Gifts.html">Write a review > </a>
         </button>
       </div>
        
@@ -757,81 +821,146 @@
 
   
   
-         <section class="contact px-6 md:px-20 pt-[60px] pb-[60px] relative " id="contact">
+         <section class="contact px-6 md:px-20 pt-[60px] pb-[60px] relative" id="contact">
           <!-- صورة الخلفية -->
           <img src="imges/c0136404-6fed-4452-9bfa-984132cc8c2c 1.png"
                alt="Contact background"
                class="absolute inset-0 w-full h-full object-cover -z-10 opacity-80">
-               
-          <div class="content bg-white flex flex-col lg:flex-row justify-between  shadow-lg rounded-lg overflow-hidden">
-              <!-- نموذج الاتصال -->
-              <div class="form pt-[120px] pl-[100px] md:p-10 w-full lg:w-1/2">
-                  <h2 class="text-3xl font-bold text-[#4B5929] mb-2">Contact US</h2>
-                  <p class="text-gray-600 mb-6">We are here for you! How can we help?</p>
-                  
-                  <form class="space-y-4">
-                      <div>
-                          <label for="name" class="block text-gray-700 mb-2">Name</label>
-                          <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4B5929]">
-                      </div>
-                      
-                      <div>
-                          <label for="email" class="block text-gray-700 mb-2">Email</label>
-                          <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4B5929]">
-                      </div>
-                      
-                      <div>
-                          <label for="message" class="block text-gray-700 mb-2">Message</label>
-                          <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4B5929]"></textarea>
-                      </div>
-                      
-                      <button type="submit" class="bg-[#4B5929] hover:bg-[#A8C686] w-full text-white px-6 py-3 mt-4 rounded-md  transition duration-300">Submit</button>
-                  </form>
-              </div>
-              
-              <!-- معلومات الاتصال -->
-              <div class="img p-6 md:p-10 w-full lg:w-1/2   flex flex-col items-center justify-center">
-                  <img src="imges/Group 74.png" alt="Contact illustration" class="w-full max-w-[400px] mb-8">
-                  
-                  <div class="space-y-6 w-full max-w-md">
-                     
-                      <div class="space-y-4">
-                          <div class="flex items-center space-x-3">
-                              <i class="fas fa-map-marker-alt text-xl"></i>
-                              <span>Palestine, Gaza, Altamal</span>
-                          </div>
-                          
-                          <div class="flex items-center space-x-3">
-                              <i class="fas fa-phone-alt text-xl"></i>
-                              <span>+2034 4040 3030</span>
-                          </div>
-                          
-                          <div class="flex items-center space-x-3">
-                              <i class="fas fa-envelope text-xl"></i>
-                              <span>Juzbor@gmail.com</span>
-                          </div>
-                      </div>
-                      
-                      <!-- <div class="flex space-x-4 pt-4">
-                          <a href="#" class="text-white hover:text-blue-200 transition duration-300">
-                              <i class="fab fa-facebook-f text-xl"></i>
-                          </a>
-                          <a href="#" class="text-white hover:text-blue-200 transition duration-300">
-                              <i class="fab fa-twitter text-xl"></i>
-                          </a>
-                          <a href="#" class="text-white hover:text-blue-200 transition duration-300">
-                              <i class="fab fa-instagram text-xl"></i>
-                          </a>
-                          <a href="#" class="text-white hover:text-blue-200 transition duration-300">
-                              <i class="fab fa-linkedin-in text-xl"></i>
-                          </a>
-                      </div> -->
+        
+          <div class="content bg-white flex flex-col md:flex-row justify-between shadow-lg rounded-lg overflow-hidden">
+            
+            <!-- معلومات الاتصال + الصورة -->
+            <div class="img order-1 md:order-2 p-6 md:p-10 w-full lg:w-1/2 relative flex flex-col items-center justify-center">
+              <!-- صورة التواصل -->
+              <img src="imges/Group 74.png" alt="Contact illustration"
+                   class="w-full max-w-xs md:max-w-sm lg:max-w-[350px] mb-6">
+        
+              <!-- أيقونات التواصل للشاشات الصغيرة والمتوسطة -->
+              <div class="flex lg:hidden flex-row space-x-3 justify-center mt-4">
+                <a href="#" class="transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                  <div class="bg-[#4B5929] w-9 h-9 rounded-full flex items-center justify-center shadow-md">
+                    <i class="fab fa-facebook-f text-white text-lg"></i>
                   </div>
+                </a>
+                <a href="#" class="transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                  <div class="bg-[#4B5929] w-9 h-9 rounded-full flex items-center justify-center shadow-md">
+                    <i class="fab fa-twitter text-white text-lg"></i>
+                  </div>
+                </a>
+                <a href="#" class="transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                  <div class="bg-[#4B5929] w-9 h-9 rounded-full flex items-center justify-center shadow-md">
+                    <i class="fab fa-instagram text-white text-lg"></i>
+                  </div>
+                </a>
+                <a href="#" class="transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                  <div class="bg-[#4B5929] w-9 h-9 rounded-full flex items-center justify-center shadow-md">
+                    <i class="fab fa-linkedin-in text-white text-lg"></i>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- أيقونات التواصل للشاشات الكبيرة -->
+              <div class="hidden lg:flex flex-col space-y-2 absolute -right-2 bottom-9 bg-[#A8C686] p-4 rounded-xl">
+                <a href="#" class="transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                  <div class="bg-[#4B5929] w-9 h-9 rounded-full flex items-center justify-center shadow-md">
+                    <i class="fab fa-facebook-f text-white text-lg"></i>
+                  </div>
+                </a>
+                <a href="#" class="transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                  <div class="bg-[#4B5929] w-9 h-9 rounded-full flex items-center justify-center shadow-md">
+                    <i class="fab fa-twitter text-white text-lg"></i>
+                  </div>
+                </a>
+                <a href="#" class="transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                  <div class="bg-[#4B5929] w-9 h-9 rounded-full flex items-center justify-center shadow-md">
+                    <i class="fab fa-instagram text-white text-lg"></i>
+                  </div>
+                </a>
+                <a href="#" class="transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                  <div class="bg-[#4B5929] w-9 h-9 rounded-full flex items-center justify-center shadow-md">
+                    <i class="fab fa-linkedin-in text-white text-lg"></i>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- معلومات التواصل -->
+              <div class="space-y-6 w-full max-w-md mt-6 lg:mt-0 hidden md:block">
+                <div class="space-y-4">
+                  <div class="flex items-center space-x-3">
+                    <i class="fas fa-map-marker-alt text-xl"></i>
+                    <span>Palestine, Gaza, Altamal</span>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <i class="fas fa-phone-alt text-xl"></i>
+                    <span>+2034 4040 3030</span>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <i class="fas fa-envelope text-xl"></i>
+                    <span>Juzbor@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- نموذج الاتصال -->
+            <div class="form order-2 md:order-1 pt-10 md:pt-[80px] px-4 pb-2 sm:px-6 md:px-10 w-full lg:w-1/2">
+              <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-[#4B5929] mb-2 ">Contact US</h2>
+              <p class="text-gray-600 mb-6">We are here for you! How can we help?</p>
+              
+              <form class="space-y-4">
+                <div>
+                  <label for="name" class="block text-gray-700 mb-2">Name</label>
+                  <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4B5929]">
+                </div>
+                <div>
+                  <label for="email" class="block text-gray-700 mb-2">Email</label>
+                  <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4B5929]">
+                </div>
+                <div>
+                  <label for="message" class="block text-gray-700 mb-2">Message</label>
+                  <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4B5929]"></textarea>
+                </div>
+                <button type="submit" class="bg-[#4B5929] hover:bg-[#A8C686] w-full text-white px-6 py-3 mt-4 rounded-md transition duration-300">Submit</button>
+              </form>
+            </div>
+        
+          </div>
+        </section>
+        
+
+    <!-- start footer  -->
+    <footer class="bg-white py-5 px-6 md:px-20 pt-[20px] pb-[40px]">
+        <img src="imges/Logo.png" class="block w-[120px] h-auto md:w-[150px] m-auto lg:mx-0 ">
+      <div class="  flex flex-col lg:flex-row justify-between items-center">
+          <div class="flex items-center mb-6 md:mb-0 ">
+              <nav class="hidden lg:flex space-x-5 lg:space-x-8 text-[#4B5929]">
+                  <a href="#" class="hover:text-gray-800">Product</a>
+                  <a href="#" class="hover:text-gray-800">Log In</a>
+                  <a href="#" class="hover:text-gray-800">Payment</a>
+                  <a href="#" class="hover:text-gray-800">About Us</a>
+                  <a href="#" class="hover:text-gray-800">Sellers</a>
+              </nav>
+          </div>
+  
+          <div class="mb-6 md:mb-0 ">
+              <h5 class="text-lg font-semibold text-[#4B5929] mb-2">Newsletter</h5>
+              <div class="flex">
+                  <input type="email" placeholder="juzoor@gmail.com" class="bg-gray-100 border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-[#4B5929]">
+                  <button class="bg-[#4B5929] text-white rounded-md py-2 px-4 ml-4 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-[#A8C686]">Subscribe</button>
               </div>
           </div>
-      </section>
-
-    
+      </div>
+  <div class="h-[1px] w-full bg-gray-200 mt-6"></div>
+      <div class=" mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+          <p>© 2025 BB. All rights reserved.</p>
+          <nav class="flex space-x-8 text-[#4B5929]">
+              <a href="#" class="hover:text-gray-700">Terms</a>
+              <a href="#" class="hover:text-gray-700">Privacy</a>
+              <a href="#" class="hover:text-gray-700">Cookies</a>
+          </nav>
+      </div>
+  </footer>
+     <!-- end footer  -->
 
   <!-- Scripts -->
   <script src="JS/header.js">
