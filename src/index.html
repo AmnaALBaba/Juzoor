@@ -7,6 +7,8 @@
   <title>Home page</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -182,11 +184,11 @@
     
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 
-    <div class="cards  py-10 px-5 sm:px-10 lg:px-20 max-w-7xl mx-auto">
+    <div class="cards  py-10 px-5 sm:px-10 lg:px-20  ">
       <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6 justify-items-center">
     
         <!-- بطاقة 1 -->
-        <div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer">
+        <div class="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 m w-full cursor-pointer">
           <div class="relative w-full h-60 overflow-hidden">
             <img src="imges/ma1.png" alt="Olive Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
             <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
@@ -516,12 +518,12 @@
      <!-- end gift section  -->
 
  <!-- الفاصل  -->
-     <section class="mogilat relative lg:h-[250px] bg-gray-10">
+     <section class=" relative lg:h-[250px] bg-[#A8C686]/50">
       
       <div class="  flex items-center justify-evenly z-30">
-        <img src="imges/83e9dbc5-fe07-486a-91c3-8a0f8c0ff05e-removebg-preview (1).png" alt="" class="">
+        <img src="imges/83e9dbc5-fe07-486a-91c3-8a0f8c0ff05e-removebg-preview (1).png" alt="" class="w-[200px] lg:w-[300px]">
 
-        <p class="  font-bold text-[20px] md:text-[25px] lg:text-[35px] px-4 ">
+        <p class="w-[370px] text-center font-bold text-[20px] md:text-[25px] lg:text-[35px] px-4 ">
           "Every folds holds a story"
         </p>
       </div>
@@ -551,7 +553,7 @@
         
           
                    
-        <div class="cardss customegrid px-20">
+        <div class="cardss customegrid px-20 lg:px-[150px] py-10">
           <!-- بطاقة -->
           <div class="card relative rounded-xl overflow-hidden bg-white transition duration-300">
             
@@ -587,7 +589,7 @@
               <button class="card-button bg-[#8B6F47] text-white px-6 py-2 rounded-full mt-4 transition-transform">See All</button>
             </div>
           </div>
-          <div class="card relative rounded-xl overflow-hidden bg-white transition duration-300">
+          <!-- <div class="card relative rounded-xl overflow-hidden bg-white transition duration-300">
             <img src="imges/Monstera Macrame Wristlet, Leaf Macrame Wristlet….png"
                  alt=""
                  class="relative w-full h-full object-cover transition-transform duration-700 ease-in-out hover:scale-110 hover:rotate-3 cursor-pointer">
@@ -595,7 +597,7 @@
               <h2 class="card-title text-xl md:text-2xl  font-bold transition-transform">Accessories</h2>
               <button class="card-button bg-[#8B6F47] text-white px-6 py-2 rounded-full mt-4 transition-transform">See All</button>
             </div>
-          </div>
+          </div> -->
         </div>
         
         
@@ -631,8 +633,8 @@
         content
       </div>
       <div class="flex justify-center mt-8 relative">
-        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
-        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" >
+        <!-- <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
+        <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" > -->
 
         
       </div>
@@ -660,13 +662,14 @@
       </div>
       <!-- content  -->
       <div class="content py-5 px-4 sm:px-6 md:px-20">
-        <div class="flex flex-wrap gap-6 justify-center ">
+        <div class="flex flex-wrap gap-10 justify-center ">
           
           <!-- Card 1 -->
           <div class="bg-[#A8C686]/50 shadow-xl rounded-lg p-8 flex items-center gap-4 relative">
             <!-- صورة الزخرفة على اليمين -->
-            <img src="imges/Group 59.png" alt="" class="absolute right-2 w-10 hidden lg:inline-block">
-          
+            <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt="" class="absolute right-4 top-6 w-[30px] hidden lg:inline-block">
+            <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt="" class="absolute right-4 bottom-6 w-[30px] hidden lg:inline-block">
+
             <!-- الصورة الشخصية داخل div يحتوي على after -->
             <div class="imging relative w-16 md:w-20 lg:w-36 flex-shrink-0 after:w-[20px] after:left-[-10px] after:md:w-[40px] after:md:left-[-20px]">
               <img src="imges/088e081a-65fa-4068-9219-2cc7ae45cb40.png" alt="User" class="relative z-10 w-full h-full object-cover">
@@ -696,9 +699,9 @@
           <!-- Card 2 -->
           <div class="bg-[#A8C686]/50 shadow-xl rounded-lg p-8 flex items-center gap-4 relative">
             <!-- صورة الزخرفة على اليمين -->
-            <img src="imges/Group 59.png" alt="" class="absolute right-2 w-10 hidden lg:inline-block">
+            <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt="" class="absolute right-4 top-6 w-[30px] hidden lg:inline-block">
+            <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt="" class="absolute right-4 bottom-6 w-[30px] hidden lg:inline-block">
           
-            <!-- الصورة الشخصية داخل div يحتوي على after -->
             <div class="imging relative w-16 md:w-20 lg:w-36 flex-shrink-0 after:w-[20px] after:left-[-10px] after:md:w-[40px] after:md:left-[-20px]">
               <img src="imges/Young smiling fair-haired woman in a garden….png" alt="User" class="relative z-10 w-full h-full object-cover">
             </div>
@@ -744,7 +747,7 @@
     
        <!-- end contact section  -->
         <!-- start section jouranl  -->
-         <section class="journal relative pt-[60px] pb-[60px] bg-[#FAF7F2] overflow-hidden bg-white" id="Journals">
+         <section class="journal relative pt-[60px] pb-[60px]  overflow-hidden bg-[#FAF7F2]" id="Journals">
           <div class="head relative flex flex-col items-center justify-center py-10 text-center">
             <img 
         src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
@@ -763,48 +766,53 @@
             <p class="text-[14px] md:text-[16px] font-bold">Ajournal of tradition, nature, and the hands that keep them alive</p>
         </div>
         <!-- content  -->
-        <div class="content  px-20 lg:px-50 flex flex-col md:flex-row justify-between items-center  gap-6 "> 
-          <div class="cart  p-3 lg:w-[280px]  flex flex-row items-between sm:flex-col w-full max-w-sm h-60 sm:h-auto">
-            <div class="image relative z-3 mb-3  w-[50%] sm:w-full">
-              <div class="overflow-hidden w-full h-full rounded-2xl">
-                <img src="imges/flor-saurina-xWijL2q3xAM-unsplash.png" alt=""
-                  class="shadow-lg w-full h-full cursor-pointer hover:scale-110 z-4 block transition-transform duration-300">
-              </div>
-            </div>
-            <div class="content flex flex-col justify-center md:px-2 pl-4 w-[50%] sm:w-full">
-              <p class="font-bold text-[18px] pt-2">Olive Trees: More Than Just Fruit</p>
-              <p class="text-gray-600 text-[14px]">Discover the tree that holds generations of love, land, and loss</p>
-            </div>
-          </div>
-          <div class="cart  p-3 lg:w-[350px]  flex flex-row items-between sm:flex-col w-full max-w-sm h-60 sm:h-auto">
-            <div class="image relative z-3 mb-3  w-[50%] sm:w-full">
-              <div class="overflow-hidden w-full h-full rounded-2xl">
-                <img src="imges/pexels-alfomedeiros-19544029.png" alt=""
-                  class="shadow-lg w-full h-full cursor-pointer hover:scale-110 z-4 block transition-transform duration-300">
-              </div>
-            </div>
-            <div class="content flex flex-col justify-center md:px-2 pl-4 w-[50%] sm:w-full">
-              <p class="font-bold text-[18px] pt-2">The story Of the Kufiya</p>
-              <p class="text-gray-600 text-[14px]">Explore the roots of Palestines most iconic thread</p>
-            </div>
-          </div>
-          <div class="cart  p-3 lg:w-[280px]  flex flex-row items-between sm:flex-col w-full max-w-sm h-60 sm:h-auto">
-            <div class="image   relative z-3 mb-3  w-[50%] sm:w-full">
-              <div class=" w-full h-full overflow-hidden  rounded-2xl">
-                <img src="imges/7ebe9701-9d09-46bf-875e-7bf3e26817fc.png" alt=""
-                  class="shadow-lg w-full h-full cursor-pointer hover:scale-110 z-4 block transition-transform duration-300">
-              </div>
-            </div>
-            <div class="content flex flex-col justify-center md:px-2 pl-4 w-[50%] sm:w-full">
-              <p class="font-bold text-[18px] pt-2">How to Care For A Zaater Plant?</p>
-              <p class="text-gray-600 text-[14px]">A beginners guide to planning, watering, and harvestingg zaatar at home<</p>
-            </div>
-          </div>
-          
+       <div class="content py-10 px-5 sm:px-10 lg:px-[130px] flex flex-col md:flex-row justify-between items-center gap-6">
+
+  <!-- الكرت الأول -->
+  <div class="cart p-3  md:w-[250px] lg:w-[280px] flex flex-row md:flex-col w-full max-w-sm h-60 sm:h-auto">
+    <div class="image relative z-3 mb-3 w-[50%] sm:w-full">
+      <div class="overflow-hidden w-full h-full rounded-2xl">
+        <img src="imges/flor-saurina-xWijL2q3xAM-unsplash.png" alt=""
+          class="shadow-lg w-full h-full cursor-pointer hover:scale-110 z-4 block transition-transform duration-300">
+      </div>
+    </div>
+    <div class="content flex flex-col justify-center md:px-2 pl-4 w-[50%] sm:w-full">
+      <p class="font-bold text-[18px] pt-2">Olive Trees: More Than Just Fruit</p>
+      <p class="text-gray-600 text-[14px]">Discover the tree that holds generations of love, land, and loss</p>
+    </div>
+  </div>
+
+  <div class="cart p-3 md:w-[250px] lg:w-[320px] flex flex-row md:flex-col w-full max-w-sm h-60 sm:h-auto">
+    <div class="image relative z-3 mb-3 w-[50%] sm:w-full">
+      <div class="overflow-hidden w-full h-full rounded-2xl">
+        <img src="imges/pexels-alfomedeiros-19544029.png" alt=""
+          class="shadow-lg w-full h-full cursor-pointer hover:scale-110 z-4 block transition-transform duration-300">
+      </div>
+    </div>
+    <div class="content flex flex-col justify-center md:px-2 pl-4 w-[50%] sm:w-full">
+      <p class="font-bold text-[18px] pt-2">The story Of the Kufiya</p>
+      <p class="text-gray-600 text-[14px]">Explore the roots of Palestine's most iconic thread</p>
+    </div>
+  </div>
+
+  <!-- الكرت الثالث -->
+  <div class="cart p-3 md:w-[250px] lg:w-[280px] flex flex-row md:flex-col w-full max-w-sm h-60 sm:h-auto">
+    <div class="image relative z-3 mb-3 w-[50%] sm:w-full">
+      <div class="w-full h-full overflow-hidden rounded-2xl">
+        <img src="imges/7ebe9701-9d09-46bf-875e-7bf3e26817fc.png" alt=""
+          class="shadow-lg w-full h-full cursor-pointer hover:scale-110 z-4 block transition-transform duration-300">
+      </div>
+    </div>
+    <div class="content flex flex-col justify-center md:px-2 pl-4 w-[50%] sm:w-full">
+      <p class="font-bold text-[18px] pt-2">How to Care For A Zaater Plant?</p>
+      <p class="text-gray-600 text-[14px]">A beginner’s guide to planting, watering, and harvesting zaatar at home</p>
+    </div>
+  </div>
+
+</div>
 
 
-          
-        </div>
+
         <div class="flex justify-center mt-8 relative">
           <!-- <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mm" >
           <img src="imges/Screenshot_2025-05-05_123651-removebg-preview.png" alt=""class="mmr" > -->
@@ -821,19 +829,19 @@
 
   
   
-         <section class="contact px-6 md:px-20 pt-[60px] pb-[60px] relative" id="contact">
+         <section class="contact px-5 sm:px-10 lg:px-20 pt-[50px] pb-[50px] relative" id="contact">
           <!-- صورة الخلفية -->
           <img src="imges/c0136404-6fed-4452-9bfa-984132cc8c2c 1.png"
                alt="Contact background"
                class="absolute inset-0 w-full h-full object-cover -z-10 opacity-80">
         
-          <div class="content bg-white flex flex-col md:flex-row justify-between shadow-lg rounded-lg overflow-hidden">
+          <div class="content bg-white flex flex-col md:flex-row justify-between shadow-lg rounded-lg  overflow-hidden">
             
             <!-- معلومات الاتصال + الصورة -->
-            <div class="img order-1 md:order-2 p-6 md:p-10 w-full lg:w-1/2 relative flex flex-col items-center justify-center">
+            <div class="img order-1 md:order-2 p-6  w-full lg:w-1/2 relative flex flex-col items-center justify-center">
               <!-- صورة التواصل -->
               <img src="imges/Group 74.png" alt="Contact illustration"
-                   class="w-full max-w-xs md:max-w-sm lg:max-w-[350px] mb-6">
+                   class="w-full max-w-[200px] md:max-w-sm lg:max-w-[320px] mb-6">
         
               <!-- أيقونات التواصل للشاشات الصغيرة والمتوسطة -->
               <div class="flex lg:hidden flex-row space-x-3 justify-center mt-4">
@@ -903,7 +911,7 @@
             </div>
         
             <!-- نموذج الاتصال -->
-            <div class="form order-2 md:order-1 pt-10 md:pt-[80px] px-4 pb-2 sm:px-6 md:px-10 w-full lg:w-1/2">
+            <div class="form order-2 md:order-1 pt-6 md:pt-[30px] px-4 pb-[30px] sm:px-6 md:px-10 w-full lg:w-1/2">
               <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-[#4B5929] mb-2 ">Contact US</h2>
               <p class="text-gray-600 mb-6">We are here for you! How can we help?</p>
               
@@ -918,9 +926,9 @@
                 </div>
                 <div>
                   <label for="message" class="block text-gray-700 mb-2">Message</label>
-                  <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4B5929]"></textarea>
+                  <textarea id="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4B5929]"></textarea>
                 </div>
-                <button type="submit" class="bg-[#4B5929] hover:bg-[#A8C686] w-full text-white px-6 py-3 mt-4 rounded-md transition duration-300">Submit</button>
+                <button type="submit" class="bg-[#4B5929] hover:bg-[#A8C686] w-full text-white px-6 py-3 mt-4 mb-4 rounded-md transition duration-300">Submit</button>
               </form>
             </div>
         
@@ -929,7 +937,7 @@
         
 
     <!-- start footer  -->
-    <footer class="bg-white py-5 px-6 md:px-20 pt-[20px] pb-[40px]">
+    <footer class="bg-white py-5 px-6 md:px-20 pt-[10px] pb-[30px]">
         <img src="imges/Logo.png" class="block w-[120px] h-auto md:w-[150px] m-auto lg:mx-0 ">
       <div class="  flex flex-col lg:flex-row justify-between items-center">
           <div class="flex items-center mb-6 md:mb-0 ">
@@ -965,6 +973,9 @@
   <!-- Scripts -->
   <script src="JS/header.js">
     </script>
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 </body>
 </html>
