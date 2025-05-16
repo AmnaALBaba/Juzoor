@@ -95,21 +95,7 @@ nav a:not(.active):hover,
 /* ============ End Mogilat ============ */
 
 /* الأسهم */
-.mm {
-  position: absolute;
-  left: 520px;
-  width: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
-.mmr {
-  position: absolute;
-  right: 520px;
-  width: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 /* تأثير الصورة */
 .image::after {
