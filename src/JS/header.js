@@ -11,6 +11,30 @@
     const headerHeight = header.offsetHeight;
     landing.style.minHeight = `calc(100vh - ${headerHeight}px)`;
   }
+  // كل روابط التنقل
+  const navLinks = document.querySelectorAll('nav a');
+
+  // ملاحظة الأقسام عند دخولها إلى الشاشة
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const navLink = document.querySelector(`nav a[href="#${id}"]`);
+
+      if (entry.isIntersecting) {
+        // إزالة الكلاس من جميع الروابط
+        navLinks.forEach(link => link.classList.remove('active'));
+        // إضافة الكلاس للرابط المناسب
+        navLink.classList.add('active');
+      }
+    });
+  }, {
+    threshold: 0.5 // عندما يكون 50% من القسم ظاهر
+  });
+
+  // ملاحظة الأقسام المطلوبة
+  const sections = document.querySelectorAll('section[id]');
+  sections.forEach(section => observer.observe(section));
+
 
   window.addEventListener('load', setLandingHeight);
   window.addEventListener('resize', setLandingHeight);
@@ -50,10 +74,7 @@
     }
   });
 
-// نختار جميع الروابط داخل الناف بار
-const navLinks = document.querySelectorAll('nav a');
 
-// نضيف event لكل رابط
 navLinks.forEach(link => {
   link.addEventListener('click', function () {
     // نزيل الكلاس active من جميع الروابط
@@ -64,9 +85,7 @@ navLinks.forEach(link => {
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
-  // حدد قائمة الجوال
   const mobileNav = document.getElementById("mobileNav");
-  // حدد جميع الروابط داخل القائمة
   const navLinks = mobileNav.querySelectorAll("a");
 
   navLinks.forEach(link => {

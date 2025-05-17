@@ -8,62 +8,67 @@
     <link rel="stylesheet" href="css/mary.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <title>Document</title>
-  </head>
-  <body>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link href="./output.css" rel="stylesheet">
-    <section class="w-full bg-white fixed z-50 shadow-sm">
+  </head>
+  <body>
+   
+    <section class="w-full bg-white fixed z-50 shadow-md">
       <div class=" containerheader ">
         <header class="flex justify-between items-center gap-6 flex-wrap relative">
           
           <!-- Logo -->
           <a href="index.html">
               <img src="imges/Logo.png" alt="Logo" 
-              class="w-[120px] h-auto md:w-[150px] lg:w-[170px]" />        </a>
+              class="w-[100px] h-auto md:w-[150px] " />        </a>
   
-          <!-- Search Bar (visible on md and up) -->
-        <div class="secrch hidden md:flex items-center relative h-[55px]">
-    <input 
-      type="search"
-      placeholder="Discover nature for your home"
-      class="text-[18px]  sm:w-[400px] md:w-[280px] lg:w-[500px] xl:w-[700px] h-full border border-[#4B5929] rounded-[10px] pl-4 text-base md:text-lg focus:border-[#4B5929] focus:outline-none pr-12 placeholder:text-[#777] placeholder:text-[14px] lg:placeholder:text-[16px]" 
-    />
-    <i class="fa-solid fa-magnifying-glass cursor-pointer text-[#4B5929] text-gray-400 absolute right-[21px] text-[16px]"></i>
-  </div>
+         
+  <nav class=" items-center justify-center gap-[30px] lg:gap-[40px]  font-normal md:text-[16px] lg:text-[18px]  hidden lg:flex">
+    <a href="index.html#Home" class="active">Home</a>
+    <a href="index.html#Products">Product</a>
+    <a href="index.html#Tools">Tools</a>
+    <a href="index.html#Gifts">Gifts</a>
+    <a href="index.html#Journals">Journals</a>
+    <a href="index.html#About">About</a>
+    <a href="index.html#contact">Contact Us</a>
+  </nav>
   
   
   
           <!-- Icons -->
-          <div class="flex items-center gap-4 xl:gap-7 text-xl mr-2.5">
+          <div class="flex items-center gap-4 xl:gap-5 text-xl mr-2">
   
             <!-- Menu Icon (first on right, hidden on md+) -->
-            <button class="block md:hidden text-2xl order-last" id="menuBtn">
+            <button class="block lg:hidden text-xl order-last" id="menuBtn">
               <i class="fa-solid fa-bars hover:cursor-pointer  "></i>
             </button>
   
             <!-- Mobile Search Icon -->
-            <button class="block md:hidden text-xl" id="mobileSearchBtn">
+            <button class="block  text-xl" id="mobileSearchBtn">
               <i class="fa-solid fa-magnifying-glass hover:cursor-pointer"></i>
             </button>
   
             <!-- Heart -->
             <a href="favirote.html" class="transition ">
-              <i class="hover:text-[#4B5929] fa-regular fa-heart text-black text-xl lg:text-2xl"></i>
+              <i class="hover:text-[#4B5929] fa-regular fa-heart text-black text-xl lg:text-[20px]"></i>
             </a>
   
             <!-- Cart -->
             <a href="Cart.html" class="hover:text[#4B5929] transition ">
-              <i class="fa-solid fa-cart-shopping text-xl lg:text-2xl hover:text-[#4B5929]"></i>
+              <i class="fa-solid fa-cart-shopping text-xl lg:text-[20px] hover:text-[#4B5929]"></i>
             </a>
   
             <!-- Login -->
-            <a href="login.html" class="text-[#4B5929] font-bold hover:underline text-[20px] hidden md:inline-block">Login</a>
+            <a href="login.html" class="text-[#4B5929] font-bold hover:underline text-[20px] hidden md:inline-block">
+              <i class="fas fa-sign-in-alt"></i>
+            </a>
           </div>
   
           <!-- Mobile Search Input -->
-          <div id="mobileSearchContainer" class="w-full hidden md:hidden relative mb-2.5">
-            <div class="flex items-center relative w-full h-[50px] border border-[#4B5929] rounded-[10px] px-4">
+          <div id="mobileSearchContainer" class="w-full hidden  relative mb-2.5">
+            <div class="flex items-center relative w-full  h-[50px] border border-[#4B5929] rounded-[10px] px-4">
               <input 
                 type="search"
                 placeholder="Search..."
@@ -75,27 +80,18 @@
   
   
           <!-- Desktop Navigation -->
-          <nav class="w-full items-center justify-center gap-[30px] lg:gap-[50px] mt-[-20px] mb-[20px] font-normal md:text-[16px] lg:text-[18px]  hidden md:flex">
-            <a href="#Home" class="active">Home</a>
-            <a href="#Products">Product</a>
-            <a href="#Tools">Tools</a>
-            <a href="#Gifts">Gifts</a>
-            <a href="#Journals">Journals</a>
-            <a href="#About">About</a>
-            <a href="#contact">Contact Us</a>
-          </nav>
+        
   
           <!-- Mobile Navigation - hidden by default -->
-          <div id="mobileNav" class="hidden flex-col items-center w-full   bg-white shadow-md rounded-lg text-[18px] font-medium md:hidden flex-wrap text-center">
-            <a href="#Home" class="block border-b border-gray-200 py-2">Home</a>
-            <a href="#products" class="block border-b border-gray-200 py-2">Product</a>
-            <a href="#Tools" class="block border-b border-gray-200 py-2">Tools</a>
-            <a href="#Gifts" class="block border-b border-gray-200 py-2">Gifts</a>
-            <a href="#Journals" class="block border-b border-gray-200 py-2">Journals</a>
-            <a href="#About" class="block border-b border-gray-200 py-2">About</a>
-            <a href="#contact" class="block border-b border-gray-200 py-2">Contact Us</a>
-            <!-- <a href="#cart" class="block">Cart</a>
-            <a href="#like" class="block">faverite</a> -->
+          <div id="mobileNav" class="hidden flex-col items-center w-full   bg-white shadow-md rounded-lg text-[18px] font-medium lg:hidden flex-wrap text-center">
+            <a href="index.html" class="block border-b border-gray-200 py-2">Home</a>
+            <a href="index.html#products" class="block border-b border-gray-200 py-2">Product</a>
+            <a href="index.html#Tools" class="block border-b border-gray-200 py-2">Tools</a>
+            <a href="index.html#Gifts" class="block border-b border-gray-200 py-2">Gifts</a>
+            <a href="index.html#Journals" class="block border-b border-gray-200 py-2">Journals</a>
+            <a href="index.html#About" class="block border-b border-gray-200 py-2">About</a>
+            <a href="index.html#contact" class="block border-b border-gray-200 py-2">Contact Us</a>
+           
             <a href="#login" class="block" >Login</a>
           </div>
   
@@ -103,434 +99,176 @@
       </div>
     </section>
     <!-- Start Product Section -->
-    <section class="product relative pt-[60px] pb-[60px] bg-white overflow-hidden" id="Products">
-      <div class="head relative flex flex-col items-center justify-center py-10 text-center">
-        <!-- صورة يسار -->
-        <img 
-          src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
-          alt="" 
-          class="block absolute left-[20px] md:left-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
-          >
-      
-        <!-- صورة يمين -->
-        <img 
-          src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
-          alt="" 
-          class=" md:block absolute right-[20px] md:right-[70px] top-1/2 -translate-y-1/2 w-[50px] md:w-[80px]"
-        >
-      
-        <!-- المحتوى -->
-        <h1 class="font-bold text-[25px] md:text-[30px] lg:text-[40px]">Products</h1>
-        <p class="text-[14px] md:text-[16px] leading-relaxed mt-2 font-bold">
-          Top picks from Palestinian gardens we love
-        </p>
-      </div>
-      <ul class="filter">
-        <li class="active" data-active="#all">All</li>
-        <li data-active="#plants">Plants</li>
-        <li data-active="#flowers">Flowers</li>
-      </ul>
+     <!-- Filter Section -->
+<section class="product relative pt-16 pb-16 bg-white overflow-hidden" id="Products">
+  <div class="head text-center py-10">
+    <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">Products</h1>
+    <p class="text-sm md:text-base font-bold mt-2">Top picks from Palestinian gardens we love</p>
+  </div>
 
-      <div class="container">
-        <div class="cards active-tab" id="all">
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma1.png" alt="" />
-            <div class="top">
-              <div class="badge">
-                <i class="fa-solid fa-star"></i>
-                <p>Best Seller</p>
-              </div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Olive Tree</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card" >
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma2.png" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Chamomile</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card" >
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma3.png" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Mint</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card" >
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma4.png" alt="" />
-            <div class="top">
-              <div class="badge">
-                <i class="fa-solid fa-seedling"></i>
-                <p>New</p>
-              </div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Jasmine</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card" >
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma5.png" alt="" />
-            <div class="top">
-              <div class="badge">
-                <i class="fa-solid fa-seedling"></i>
-                <p>New</p>
-              </div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Anemone</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card" >
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma6.png" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Fig Tree</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card" >
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma7.png" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Poppy</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card" >
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma8.png" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Alo Vera</p>
-              <p>5%</p>
-            </div>
-          </div>
+  <!-- Filter Buttons -->
+  <ul class="filter flex justify-center gap-4 mb-10">
+    <li class="filter-btn active px-4 py-2 bg-[#4B5929] text-white rounded cursor-pointer" data-target="all">All</li>
+    <li class="filter-btn px-4 py-2 bg-[#A8C686] text-black rounded cursor-pointer" data-target="plants">Plants</li>
+    <li class="filter-btn px-4 py-2 bg-[#A8C686] text-black rounded cursor-pointer" data-target="flowers">Flowers</li>
+  </ul>
+
+  <!-- Cards Container -->
+  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+    <!-- Example Card -->
+    <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma1.png" alt="Olive Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Olive Tree</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
         </div>
-        <div class="cards active-tab" id="plants">
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma1.png" alt="" />
-            <div class="top">
-              <div class="badge">
-                <i class="fa-solid fa-star"></i>
-                <p>Best Seller</p>
-              </div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Olive Tree</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma3.png" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Mint</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma6.png" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Fig Tree</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma8.png" alt="" />
-            <div class="top">
-              <div class="badge">
-                <i class="fa-solid fa-seedling"></i>
-                <p>New</p>
-              </div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Alo Vera</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/zaater.jpeg" alt="" />
-            <div class="top">
-              <div class="badge">
-                <i class="fa-solid fa-seedling"></i>
-                <p>New</p>
-              </div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Zaatar</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/pomegrant.jpeg" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Pomegranate Tree</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/sage.jpeg" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Sage</p>
-              <p>5%</p>
-            </div>
-          </div>
-        
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/lemon tree.jpeg" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Lemon Tree</p>
-              <p>5%</p>
-            </div>
-          </div>
-        </div>
-        <div class="cards active-tab" id="flowers">
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma4.png" alt="" />
-            <div class="top">
-              <div class="badge">
-                <i class="fa-solid fa-star"></i>
-                <p>Best Seller</p>
-              </div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Jasmine</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma5.png" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Anemone</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/ma7.png" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Poppy</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/Bougainvillea.jpeg" alt="" />
-            <div class="top">
-              <div class="badge">
-                <i class="fa-solid fa-seedling"></i>
-                <p>New</p>
-              </div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Bougainvillea</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/Hibiscus .jpeg" alt="" />
-            <div class="top">
-              <div class="badge">
-                <i class="fa-solid fa-seedling"></i>
-                <p>New</p>
-              </div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Hibiscus</p>
-              <p>5%</p>
-            </div>
-          </div>
-          
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/Chrysanthemum.jpg" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Chrysanthemum</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/Iris.jpg" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Iris</p>
-              <p>5%</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="buttons">
-              <a href="" class="primary">Add To Cart</a>
-              <a href="" class="secondary">More Details</a>
-            </div>
-            <img src="imges/Petunia.jpeg" alt="" />
-            <div class="top">
-              <div class="badge"></div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="details">
-              <p>Petunia</p>
-              <p>5%</p>
-            </div>
-          </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
         </div>
       </div>
-      
-    </section>
-    <!-- End  Product Section -->
+    </div>
+     <!-- زز  -->
+   
+
+    <!-- كرر الكارد فوق وعدل فقط الصورة والعنوان والكاتيجوري "plants" أو "flowers" حسب نوع المنتج -->
+    <!-- مثال آخر -->
+    <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma5.png" alt="Anemone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Anemone</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$12</span>
+          <span class="text-[#af926a] font-semibold">$11.40</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+   
+
+
+<!-- Jasmine -->
+<div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+  <div class="relative w-full h-60 overflow-hidden">
+    <img src="imges/ma2.png" alt="Jasmine" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+    <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+      <i class="fa-solid fa-heart"></i>
+    </button>
+    <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Jasmine</p>
+  </div>
+  <div class="p-4">
+    <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+      <span class="line-through text-gray-400">$15</span>
+      <span class="text-[#af926a] font-semibold">$13.20</span>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+      <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+      <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+    </div>
+  </div>
+</div>
+
+<!-- Mini Rose -->
+<div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+  <div class="relative w-full h-60 overflow-hidden">
+    <img src="imges/ma3.png" alt="Mini Rose" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+    <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+      <i class="fa-solid fa-heart"></i>
+    </button>
+    <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Mini Rose</p>
+  </div>
+  <div class="p-4">
+    <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+      <span class="line-through text-gray-400">$18</span>
+      <span class="text-[#af926a] font-semibold">$16.00</span>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+      <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+      <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+    </div>
+  </div>
+</div>
+
+<!-- Orchid -->
+<div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+  <div class="relative w-full h-60 overflow-hidden">
+    <img src="imges/ma4.png" alt="Orchid" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+    <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+      <i class="fa-solid fa-heart"></i>
+    </button>
+    <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Orchid</p>
+  </div>
+  <div class="p-4">
+    <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+      <span class="line-through text-gray-400">$22</span>
+      <span class="text-[#af926a] font-semibold">$20.00</span>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+      <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+      <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+    </div>
+  </div>
+</div>
+
+    
+
+    <!-- أضف باقي المنتجات بنفس الطريقة وعدل data-category -->
+  </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('.product-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.getAttribute('data-target');
+
+      // تفعيل الزر المحدد وإلغاء تفعيل الباقي
+      filterButtons.forEach(btn => {
+  btn.classList.remove('bg-[#4B5929]', 'text-white');
+  btn.classList.add('bg-[#A8C686]', 'text-black');
+});
+
+button.classList.remove('bg-[#A8C686]', 'text-black');
+button.classList.add('bg-[#4B5929]', 'text-white');
+
+
+      // إظهار المنتجات المطلوبة
+      productCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (target === 'all' || category === target) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
+
+   
       <!-- start footer  -->
     <footer class="bg-white py-5 px-6 md:px-20 pt-[10px] pb-[30px]">
         <img src="imges/Logo.png" class="block w-[120px] h-auto md:w-[150px] m-auto lg:mx-0 ">

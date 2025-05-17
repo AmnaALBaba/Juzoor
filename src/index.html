@@ -20,57 +20,60 @@
 </head>
 <body class="bg-white ">
 
-  <section class="w-full bg-white fixed z-50 shadow-sm">
+  <section class="w-full bg-white fixed z-50 shadow-md">
     <div class=" containerheader ">
       <header class="flex justify-between items-center gap-6 flex-wrap relative">
         
         <!-- Logo -->
         <a href="index.html">
             <img src="imges/Logo.png" alt="Logo" 
-            class="w-[120px] h-auto md:w-[150px] lg:w-[170px]" />        </a>
+            class="w-[100px] h-auto md:w-[150px] " />        </a>
 
-        <!-- Search Bar (visible on md and up) -->
-      <div class="secrch hidden md:flex items-center relative h-[55px]">
-  <input 
-    type="search"
-    placeholder="Discover nature for your home"
-    class="text-[18px]  sm:w-[400px] md:w-[280px] lg:w-[500px] xl:w-[700px] h-full border border-[#4B5929] rounded-[10px] pl-4 text-base md:text-lg focus:border-[#4B5929] focus:outline-none pr-12 placeholder:text-[#777] placeholder:text-[14px] lg:placeholder:text-[16px]" 
-  />
-  <i class="fa-solid fa-magnifying-glass cursor-pointer text-[#4B5929] text-gray-400 absolute right-[21px] text-[16px]"></i>
-</div>
+       
+<nav class=" items-center justify-center gap-[30px] lg:gap-[40px]  font-normal md:text-[16px] lg:text-[18px]  hidden lg:flex">
+  <a href="#Home" class="active">Home</a>
+  <a href="#Products">Product</a>
+  <a href="#Tools">Tools</a>
+  <a href="#Gifts">Gifts</a>
+  <a href="#Journals">Journals</a>
+  <a href="#About">About</a>
+  <a href="#contact">Contact Us</a>
+</nav>
 
 
 
         <!-- Icons -->
-        <div class="flex items-center gap-4 xl:gap-7 text-xl mr-2.5">
+        <div class="flex items-center gap-4 xl:gap-5 text-xl mr-2">
 
           <!-- Menu Icon (first on right, hidden on md+) -->
-          <button class="block md:hidden text-2xl order-last" id="menuBtn">
+          <button class="block lg:hidden text-xl order-last" id="menuBtn">
             <i class="fa-solid fa-bars hover:cursor-pointer  "></i>
           </button>
 
           <!-- Mobile Search Icon -->
-          <button class="block md:hidden text-xl" id="mobileSearchBtn">
+          <button class="block  text-xl" id="mobileSearchBtn">
             <i class="fa-solid fa-magnifying-glass hover:cursor-pointer"></i>
           </button>
 
           <!-- Heart -->
           <a href="favirote.html" class="transition ">
-            <i class="hover:text-[#4B5929] fa-regular fa-heart text-black text-xl lg:text-2xl"></i>
+            <i class="hover:text-[#4B5929] fa-regular fa-heart text-black text-xl lg:text-[20px]"></i>
           </a>
 
           <!-- Cart -->
           <a href="Cart.html" class="hover:text[#4B5929] transition ">
-            <i class="fa-solid fa-cart-shopping text-xl lg:text-2xl hover:text-[#4B5929]"></i>
+            <i class="fa-solid fa-cart-shopping text-xl lg:text-[20px] hover:text-[#4B5929]"></i>
           </a>
 
           <!-- Login -->
-          <a href="login.html" class="text-[#4B5929] font-bold hover:underline text-[20px] hidden md:inline-block">Login</a>
+          <a href="login.html" class="text-[#4B5929] font-bold hover:underline text-[20px] hidden md:inline-block">
+            <i class="fas fa-sign-in-alt"></i>
+          </a>
         </div>
 
         <!-- Mobile Search Input -->
-        <div id="mobileSearchContainer" class="w-full hidden md:hidden relative mb-2.5">
-          <div class="flex items-center relative w-full h-[50px] border border-[#4B5929] rounded-[10px] px-4">
+        <div id="mobileSearchContainer" class="w-full hidden  relative mb-2.5">
+          <div class="flex items-center relative w-full  h-[50px] border border-[#4B5929] rounded-[10px] px-4">
             <input 
               type="search"
               placeholder="Search..."
@@ -82,18 +85,10 @@
 
 
         <!-- Desktop Navigation -->
-        <nav class="w-full items-center justify-center gap-[30px] lg:gap-[50px] mt-[-20px] mb-[20px] font-normal md:text-[16px] lg:text-[18px]  hidden md:flex">
-          <a href="#Home" class="active">Home</a>
-          <a href="#Products">Product</a>
-          <a href="#Tools">Tools</a>
-          <a href="#Gifts">Gifts</a>
-          <a href="#Journals">Journals</a>
-          <a href="#About">About</a>
-          <a href="#contact">Contact Us</a>
-        </nav>
+      
 
         <!-- Mobile Navigation - hidden by default -->
-        <div id="mobileNav" class="hidden flex-col items-center w-full   bg-white shadow-md rounded-lg text-[18px] font-medium md:hidden flex-wrap text-center">
+        <div id="mobileNav" class="hidden flex-col items-center w-full   bg-white shadow-md rounded-lg text-[18px] font-medium lg:hidden flex-wrap text-center">
           <a href="#Home" class="block border-b border-gray-200 py-2">Home</a>
           <a href="#products" class="block border-b border-gray-200 py-2">Product</a>
           <a href="#Tools" class="block border-b border-gray-200 py-2">Tools</a>
@@ -101,8 +96,7 @@
           <a href="#Journals" class="block border-b border-gray-200 py-2">Journals</a>
           <a href="#About" class="block border-b border-gray-200 py-2">About</a>
           <a href="#contact" class="block border-b border-gray-200 py-2">Contact Us</a>
-          <!-- <a href="#cart" class="block">Cart</a>
-          <a href="#like" class="block">faverite</a> -->
+         
           <a href="#login" class="block" >Login</a>
         </div>
 
@@ -530,7 +524,7 @@
     <!-- end  -->
 
          <!-- start tools section  -->
-         <section class="tools pt-[60px] pb-[60px] id="Tools">
+         <section class="tools pt-[60px] pb-[60px] " id="Tools">
           <div class="head relative flex flex-col items-center justify-center py-10 text-center">
             <img 
             src="imges/Screenshot_2025-05-04_210646-removebg-preview.png" 
@@ -1131,8 +1125,6 @@
   <!-- Scripts -->
   <script src="JS/header.js">
     </script>
-    <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 </body>
