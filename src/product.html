@@ -100,21 +100,21 @@
     </section>
     <!-- Start Product Section -->
      <!-- Filter Section -->
-<section class="product relative pt-16 pb-16 bg-white overflow-hidden" id="Products">
-  <div class="head text-center py-10">
+<section class="product relative pt-20 pb-2 bg-white overflow-hidden" id="Products">
+  <div class="head text-center py-12">
     <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">Products</h1>
     <p class="text-sm md:text-base font-bold mt-2">Top picks from Palestinian gardens we love</p>
   </div>
 
   <!-- Filter Buttons -->
-  <ul class="filter flex justify-center gap-4 mb-10">
-    <li class="filter-btn active px-4 py-2 bg-[#4B5929] text-white rounded cursor-pointer" data-target="all">All</li>
-    <li class="filter-btn px-4 py-2 bg-[#A8C686] text-black rounded cursor-pointer" data-target="plants">Plants</li>
-    <li class="filter-btn px-4 py-2 bg-[#A8C686] text-black rounded cursor-pointer" data-target="flowers">Flowers</li>
+  <ul class="filter flex justify-center gap-4 mb-6">
+    <li class="filter-btn active px-4 py-2 bg-[#4B5929] text-white rounded cursor-pointer shadow-md" data-target="all">All</li>
+    <li class="filter-btn px-4 py-2 bg-[#A8C686]/50 text-black rounded cursor-pointer" data-target="plants">Plants</li>
+    <li class="filter-btn px-4 py-2 bg-[#A8C686]/50 text-black rounded cursor-pointer" data-target="flowers">Flowers</li>
   </ul>
 
   <!-- Cards Container -->
-  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+  <div class="container mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
     <!-- Example Card -->
     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
       <div class="relative w-full h-60 overflow-hidden">
@@ -247,12 +247,12 @@
 
       // تفعيل الزر المحدد وإلغاء تفعيل الباقي
       filterButtons.forEach(btn => {
-  btn.classList.remove('bg-[#4B5929]', 'text-white');
-  btn.classList.add('bg-[#A8C686]', 'text-black');
+  btn.classList.remove('bg-[#4B5929]', 'text-white',"shadow-md");
+  btn.classList.add('bg-[#A8C686]/50', 'text-black',"shadow-md");
 });
 
-button.classList.remove('bg-[#A8C686]', 'text-black');
-button.classList.add('bg-[#4B5929]', 'text-white');
+button.classList.remove('bg-[#A8C686]/50', 'text-black',"shadow-md");
+button.classList.add('bg-[#4B5929]', 'text-white',"shadow-md");
 
 
       // إظهار المنتجات المطلوبة
