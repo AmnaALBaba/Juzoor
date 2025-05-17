@@ -100,13 +100,14 @@
     </section>
     <!-- Start Product Section -->
      <!-- Filter Section -->
-<section class="product relative pt-16 pb-16 bg-white overflow-hidden" id="Products">
-  <div class="head text-center py-10">
+<section class="product relative pt-20 pb-2 bg-white overflow-hidden" id="Products">
+  <div class="head text-center py-12">
     <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">Products</h1>
     <p class="text-sm md:text-base font-bold mt-2">Top picks from Palestinian gardens we love</p>
   </div>
 
   <!-- Filter Buttons -->
+<<<<<<< HEAD
   <ul class="filter flex justify-center gap-4 mb-4 ">
     <li class="filter-btn active px-4 py-2 bg-[#D9A066] text-white rounded cursor-pointer" data-target="all">All</li>
     <li class="filter-btn px-4 py-2  text-black rounded cursor-pointer" data-target="plants">Plants</li>
@@ -115,6 +116,16 @@
 
   <!-- Cards Container -->
   <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 pt-4	">
+=======
+  <ul class="filter flex justify-center gap-4 mb-6">
+    <li class="filter-btn active px-4 py-2 bg-[#4B5929] text-white rounded cursor-pointer shadow-md" data-target="all">All</li>
+    <li class="filter-btn px-4 py-2 bg-[#A8C686]/50 text-black rounded cursor-pointer" data-target="plants">Plants</li>
+    <li class="filter-btn px-4 py-2 bg-[#A8C686]/50 text-black rounded cursor-pointer" data-target="flowers">Flowers</li>
+  </ul>
+
+  <!-- Cards Container -->
+  <div class="container mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+>>>>>>> 3901959f4b9a296249d7a18a3f8575f492637022
     <!-- Example Card -->
      <!-- All -->
       <!-- Olive Tree -->
@@ -1541,12 +1552,15 @@
 
       // تفعيل الزر المحدد وإلغاء تفعيل الباقي
       filterButtons.forEach(btn => {
+
   btn.classList.remove('bg-[#D9A066]', 'text-white');
   btn.classList.add('text-black');
 });
 
 button.classList.remove( 'text-black');
 button.classList.add('bg-[#D9A066]', 'text-white');
+
+
 
 
       // إظهار المنتجات المطلوبة
