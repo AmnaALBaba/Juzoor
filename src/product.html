@@ -107,15 +107,1103 @@
   </div>
 
   <!-- Filter Buttons -->
-  <ul class="filter flex justify-center gap-4 mb-10">
-    <li class="filter-btn active px-4 py-2 bg-[#4B5929] text-white rounded cursor-pointer" data-target="all">All</li>
-    <li class="filter-btn px-4 py-2 bg-[#A8C686] text-black rounded cursor-pointer" data-target="plants">Plants</li>
-    <li class="filter-btn px-4 py-2 bg-[#A8C686] text-black rounded cursor-pointer" data-target="flowers">Flowers</li>
+  <ul class="filter flex justify-center gap-4 mb-4 ">
+    <li class="filter-btn active px-4 py-2 bg-[#D9A066] text-white rounded cursor-pointer" data-target="all">All</li>
+    <li class="filter-btn px-4 py-2  text-black rounded cursor-pointer" data-target="plants">Plants</li>
+    <li class="filter-btn px-4 py-2  text-black rounded cursor-pointer" data-target="flowers">Flowers</li>
   </ul>
 
   <!-- Cards Container -->
-  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 pt-4	">
     <!-- Example Card -->
+     <!-- All -->
+      <!-- Olive Tree -->
+    <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma1.png" alt="Olive Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Olive Tree</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Chamomile -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma2.png" alt="Chamomile" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Chamomile</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+        <!-- Mulberry Tree -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Mulberry Tree.jpg" alt="Mulberry Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Mulberry Tree</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Jasmine -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma4.png" alt="Jasmine" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Jasmine</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Anemone -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma5.png" alt="Anemone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Anemone</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Fig Tree -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma6.png" alt="Fig Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Fig Tree</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Poppy -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma7.png" alt="Poppy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Poppy</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Alo Vera -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma8.png" alt="Alo Vera" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Alo Vera</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Purslane -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Purslane.jpeg" alt="Purslane" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Purslane</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Mallow -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Mallow.jpg" alt="Mallow" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Mallow</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Dandelion -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Dandelion.jpeg" alt="Dandelion" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Dandelion</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Spinach -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Spinach.jpg" alt="Spinach" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Spinach</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Snapdragon -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Snapdragon.jpeg" alt="Snapdragon" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Snapdragon</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Tulip -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Tulip.jpeg" alt="Tulip" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Tulip</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Rosemary -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Rosemary.jpeg" alt="Rosemary" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Rosemary</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Anise -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Anise.jpg" alt="Anise" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Anise</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Fennel -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Fennel.jpeg" alt="Fennel" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Fennel</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Carob Tree -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Carob Tree.jpeg" alt="Carob Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Carob Tree</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loquat -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Loquat.jpg" alt="Loquat" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Loquat</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Cyclamen -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Cyclamen.jpg" alt="Cyclamen" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Cyclamen</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Wild Mustard -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Wild Mustard.jpg" alt="Wild Mustard" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Wild Mustard</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Cornflower -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Cornflower.jpg" alt="Cornflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Cornflower</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Wild Daisies -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Daisies.jpg" alt="Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Daisies</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Asphodel -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Asphodel.jpg" alt="Asphodel" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Asphodel</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Damask Rose -->
+        <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Damask Rose.jpg" alt="Damask Rose" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Damask Rose</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Marigold -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Marigold.jpeg" alt="Marigold" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Marigold</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Petunia -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Petunia (2).jpeg" alt="Petunia" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Petunia</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+   <!-- Geranium -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Geranium.jpeg" alt="Geranium" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Geranium</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Lavender -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Lavender.jpeg" alt="Lavender" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Lavender</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Hibiscus -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Hibiscus.jpg" alt="Hibiscus" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Hibiscus</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!--Chrysanthemum -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Chrysanthemum.jpeg" alt="Chrysanthemum" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Chrysanthemum</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Zaater -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="all">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Zaater.jpeg" alt="Zaater" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Zaater</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+ <!-- All End -->
+
+
+<!-- Flowers -->
+  <!-- Marigold -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Marigold.jpeg" alt="Marigold" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Marigold</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+      <!-- Geranium -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Geranium.jpeg" alt="Geranium" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Geranium</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+  
+      <!-- Jasmine -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma4.png" alt="Jasmine" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Jasmine</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    
+      <!-- Tulip -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Tulip.jpeg" alt="Tulip" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Tulip</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+     <!-- Damask Rose -->
+        <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Damask Rose.jpg" alt="Damask Rose" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Damask Rose</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!--Chrysanthemum -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Chrysanthemum.jpeg" alt="Chrysanthemum" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Chrysanthemum</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    
+     <!-- Lavender -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Lavender.jpeg" alt="Lavender" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Lavender</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Petunia -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Petunia (2).jpeg" alt="Petunia" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Petunia</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+  <!-- Dandelion -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Dandelion.jpeg" alt="Dandelion" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Dandelion</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+ <!-- Snapdragon -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Snapdragon.jpeg" alt="Snapdragon" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Snapdragon</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div> 
+     
+     <!-- Hibiscus -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Hibiscus.jpg" alt="Hibiscus" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Hibiscus</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Chamomile -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma2.png" alt="Chamomile" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Chamomile</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+       <!-- Cyclamen -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Cyclamen.jpg" alt="Cyclamen" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Cyclamen</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Wild Mustard -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Wild Mustard.jpg" alt="Wild Mustard" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Wild Mustard</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+     <!-- Wild Daisies -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Daisies.jpg" alt="Daisies" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Daisies</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Cornflower -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Cornflower.jpg" alt="Cornflower" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Cornflower</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Asphodel -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Asphodel.jpg" alt="Asphodel" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Asphodel</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+     <!-- Poppy -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma7.png" alt="Poppy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Poppy</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+        <!-- Anemone -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma5.png" alt="Anemone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Anemone</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+<!-- Flowers End -->
+
+
+  <!-- Plants -->
+     <!-- Olive Tree -->
     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
       <div class="relative w-full h-60 overflow-hidden">
         <img src="imges/ma1.png" alt="Olive Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
@@ -136,24 +1224,62 @@
         </div>
       </div>
     </div>
-     <!-- زز  -->
-   
-
-    <!-- كرر الكارد فوق وعدل فقط الصورة والعنوان والكاتيجوري "plants" أو "flowers" حسب نوع المنتج -->
-    <!-- مثال آخر -->
-    <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
+      <!-- Anise -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
       <div class="relative w-full h-60 overflow-hidden">
-        <img src="imges/ma5.png" alt="Anemone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <img src="imges/Anise.jpg" alt="Anise" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
         <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
         <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
           <i class="fa-solid fa-heart"></i>
         </button>
-        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Anemone</p>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Anise</p>
       </div>
       <div class="p-4">
         <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
-          <span class="line-through text-gray-400">$12</span>
-          <span class="text-[#af926a] font-semibold">$11.40</span>
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+        <!-- Mulberry Tree -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Mulberry Tree.jpg" alt="Mulberry Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Mulberry Tree</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+     <!-- Mint -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma3.png" alt="Mint" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Mint</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
         </div>
         <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
           <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
@@ -162,73 +1288,241 @@
       </div>
     </div>
    
+      <!-- Fennel -->
+      <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Fennel.jpeg" alt="Fennel" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Fennel</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    
+     <!-- Loquat -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Loquat.jpg" alt="Loquat" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Loquat</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Zaater -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Zaater.jpeg" alt="Zaater" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Zaater</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+     
+     <!-- Rosemary -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Rosemary.jpeg" alt="Rosemary" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Rosemary</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+        <!-- Mallow -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Mallow.jpg" alt="Mallow" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Mallow</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+      <!-- Alo Vera -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma8.png" alt="Alo Vera" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Alo Vera</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+         <!-- Fig Tree -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma6.png" alt="Fig Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Fig Tree</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Carob Tree -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Carob Tree.jpeg" alt="Carob Tree" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Carob Tree</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+     <!-- Spinach -->
+       <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Spinach.jpg" alt="Spinach" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Spinach</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+   <!-- Chamomile -->
+   <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/ma2.png" alt="Chamomile" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Chamomile</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+   <!-- Purslane -->
+     <div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
+      <div class="relative w-full h-60 overflow-hidden">
+        <img src="imges/Purslane.jpeg" alt="Purslane" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+        <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Purslane</p>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
+          <span class="line-through text-gray-400">$15</span>
+          <span class="text-[#af926a] font-semibold">$10</span>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
+          <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
+          <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
+        </div>
+      </div>
+    </div>
+  <!-- Plants End -->
 
-
-<!-- Jasmine -->
-<div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
-  <div class="relative w-full h-60 overflow-hidden">
-    <img src="imges/ma2.png" alt="Jasmine" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
-    <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
-      <i class="fa-solid fa-heart"></i>
-    </button>
-    <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Jasmine</p>
-  </div>
-  <div class="p-4">
-    <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
-      <span class="line-through text-gray-400">$15</span>
-      <span class="text-[#af926a] font-semibold">$13.20</span>
-    </div>
-    <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
-      <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
-      <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
-    </div>
-  </div>
-</div>
-
-<!-- Mini Rose -->
-<div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="plants">
-  <div class="relative w-full h-60 overflow-hidden">
-    <img src="imges/ma3.png" alt="Mini Rose" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
-    <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
-      <i class="fa-solid fa-heart"></i>
-    </button>
-    <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Mini Rose</p>
-  </div>
-  <div class="p-4">
-    <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
-      <span class="line-through text-gray-400">$18</span>
-      <span class="text-[#af926a] font-semibold">$16.00</span>
-    </div>
-    <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
-      <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
-      <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
-    </div>
-  </div>
-</div>
-
-<!-- Orchid -->
-<div class="product-card group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 max-w-sm w-full cursor-pointer" data-category="flowers">
-  <div class="relative w-full h-60 overflow-hidden">
-    <img src="imges/ma4.png" alt="Orchid" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
-    <button class="absolute top-2 right-2 w-9 h-9 rounded-full border-2 border-white text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 hover:bg-white/30" onclick="this.classList.toggle('text-red-600')">
-      <i class="fa-solid fa-heart"></i>
-    </button>
-    <p class="absolute bottom-2 left-2 text-white text-lg font-semibold bg-black/40 px-2 py-1 rounded group-hover:-translate-y-20 transition duration-300">Orchid</p>
-  </div>
-  <div class="p-4">
-    <div class="flex justify-between items-center mb-1 text-sm md:text-[16px] text-gray-600">
-      <span class="line-through text-gray-400">$22</span>
-      <span class="text-[#af926a] font-semibold">$20.00</span>
-    </div>
-    <div class="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-all duration-300 p-4 flex flex-col items-center gap-2 bg-white/90">
-      <a href="#" class="bg-[#af926a] text-white w-full text-center py-2 rounded-full hover:bg-[#8B6F47] transition">Add To Cart</a>
-      <a href="#" class="bg-white text-[#af926a] border border-[#af926a] w-full text-center py-2 rounded-full hover:bg-[#af926a] hover:text-white transition">More Details</a>
-    </div>
-  </div>
-</div>
 
     
 
@@ -247,12 +1541,12 @@
 
       // تفعيل الزر المحدد وإلغاء تفعيل الباقي
       filterButtons.forEach(btn => {
-  btn.classList.remove('bg-[#4B5929]', 'text-white');
-  btn.classList.add('bg-[#A8C686]', 'text-black');
+  btn.classList.remove('bg-[#D9A066]', 'text-white');
+  btn.classList.add('text-black');
 });
 
-button.classList.remove('bg-[#A8C686]', 'text-black');
-button.classList.add('bg-[#4B5929]', 'text-white');
+button.classList.remove( 'text-black');
+button.classList.add('bg-[#D9A066]', 'text-white');
 
 
       // إظهار المنتجات المطلوبة
